@@ -15,6 +15,14 @@
 @include('partials/nav-bar')
 
 @include('partials/main/hero')
+@include('partials/main/about-us')
+@include('partials/main/events')
+@include('partials/main/our-vision')
+@include('partials/main/partners')
+@include('partials/main/projects')
+@include('partials/main/media-coverage')
+@include('partials/main/faq')
+@include('partials/main/support-us')
 
 @include('partials/footer')
 
