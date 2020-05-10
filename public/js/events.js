@@ -1,15 +1,55 @@
+let root = document.documentElement;
+
+var currentIndex = 0
+
+var indexesInRight = []
+
 function getDistance(e1, e2) {
     var x1 = e1.getBoundingClientRect().left
     var x2 = e2.getBoundingClientRect().left
     return Math.abs(x1 - x2)
 }
 
-let root = document.documentElement;
-var currentIndex = 0
+function setPointerEvents(className, state){
+    document.querySelectorAll(className).forEach(element => {
+            element.setAttribute('pointer-events', state)
+        })
+}
+
+function animateLogos(j) {
+    if (j !== currentIndex) {
+        setPointerEvents('.mini-logo','none')
+        if (!indexesInRight.includes(j)) {
+            document.querySelectorAll('.big-logo')[currentIndex].classList.replace('in-middle', 'in-right')
+            indexesInRight.unshift(currentIndex)
+            document.querySelectorAll('.big-logo')[j].classList.replace('in-left', 'in-middle')
+            setPointerEvents('.mini-logo','all')
+        } else {
+            document.querySelectorAll('.big-logo')[currentIndex].classList.replace('in-middle', 'in-left')
+            for (let i = 0; i < indexesInRight.indexOf(j) + 1; i++) {
+                const element = indexesInRight[i];
+                setTimeout(() => {
+                    if (j === element) {
+                        console.log('hna')
+                        document.querySelectorAll('.big-logo')[element].classList.replace('in-right', 'in-middle')
+                        indexesInRight.shift()
+                        setTimeout(() => {
+                            setPointerEvents('.mini-logo','all')
+                        }, 300)
+                    } else {
+                        document.querySelectorAll('.big-logo')[element].classList.replace('in-right', 'in-left')
+                        indexesInRight.shift()
+                    }
+                }, 200)
+            }
+        }
+    }
+}
 
 document.querySelectorAll('.mini-logo').forEach(
     (element, i) => {
         element.addEventListener('click', (e) => {
+            animateLogos(i)
             preSelected = document.querySelectorAll('.is-Selected')[0]
             newSelected = element.parentNode.parentNode
             if (i - currentIndex > 2) {

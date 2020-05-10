@@ -1,4 +1,3 @@
-<!-- mywork -->
 <div class="container">
     <div class="row justify-content-center">
         <div class="col- title">
@@ -7,9 +6,8 @@
     </div>
     <div class="row justify-content-center">
         <p class='col-9 events-p'>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint non corporis d
-            ignissimos excepturi eaque omnis molestiae facilis laudantium accusamus ad? sdvjksdfjkb haya
-            tar sdvjksd jsdjvkn
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. In quidem atque qui magnam
+            voluptatibus nobis aliquam? Ullam expedita minima culpa aspernatur provident quisquam
         </p>
     </div>
     <div class="row justify-content-center">
@@ -34,7 +32,7 @@
             </div>
             <div class="left-side-container">
                 <div class='event-item is-Selected'>
-                    <span>
+                    <span class='event-item-top'>
                         <span></span>
                         <span></span>
                         <svg class='hackit-mini-logo mini-logo' xmlns="http://www.w3.org/2000/svg" width="88.452" height="88.452" viewBox="0 0 88.452 88.452">
@@ -53,14 +51,14 @@
                         </svg>
                     </span>
                     <p class='event-item-title'>Hack !t</p>
-                    <span>
+                    <span class='event-item-bottom'>
                         <span></span>
                         <span></span>
                         <span></span>
                     </span>
                 </div>
                 <div class='event-item'>
-                    <span>
+                    <span class='event-item-top'>
                         <span></span>
                         <span></span>
                         <svg class='leapfrog-mini-logo mini-logo' xmlns="http://www.w3.org/2000/svg" width="56.23" height="55.762" viewBox="0 0 56.23 55.762">
@@ -80,14 +78,14 @@
                         </svg>
                     </span>
                     <p class='event-item-title'>Leapfrog</p>
-                    <span>
+                    <span class='event-item-bottom'>
                         <span></span>
                         <span></span>
                         <span></span>
                     </span>
                 </div>
                 <div class='event-item'>
-                    <span>
+                    <span class='event-item-top'>
                         <span></span>
                         <span></span>
                         <svg class='confsday-mini-logo mini-logo' xmlns="http://www.w3.org/2000/svg" width="46.238" height="69.527" viewBox="0 0 46.238 69.527">
@@ -107,14 +105,14 @@
                         </svg>
                     </span>
                     <p class='event-item-title'>ConfsDay</p>
-                    <span>
+                    <span class='event-item-bottom'>
                         <span></span>
                         <span></span>
                         <span></span>
                     </span>
                 </div>
                 <div class='event-item'>
-                    <span>
+                    <span class='event-item-top'>
                         <span></span>
                         <span></span>
                         <svg class='localhackday-mini-logo mini-logo' xmlns="http://www.w3.org/2000/svg" width="146.571" height="64.311" viewBox="0 0 146.571 64.311">
@@ -149,14 +147,14 @@
                         </svg>
                     </span>
                     <p class='event-item-title'>Local Hack Day</p>
-                    <span>
+                    <span class='event-item-bottom'>
                         <span></span>
                         <span></span>
                         <span></span>
                     </span>
                 </div>
                 <div class='event-item'>
-                    <span>
+                    <span class='event-item-top'>
                         <span></span>
                         <span></span>
                         <svg class='castech-mini-logo mini-logo' xmlns="http://www.w3.org/2000/svg" width="82.531" height="69.96" viewBox="0 0 82.531 69.96">
@@ -175,20 +173,20 @@
                         </svg>
                     </span>
                     <p class='event-item-title'>Casbahtech<br />Hackathon</p>
-                    <span>
+                    <span class='event-item-bottom'>
                         <span></span>
                         <span></span>
                         <span></span>
                     </span>
                 </div>
                 <div class='event-item'>
-                    <span>
+                    <span class='event-item-top'>
                         <span></span>
                         <span></span>
                         <img src="{{asset('img/Rectangle 55.png')}}" alt="SMC" class='smc-mini-logo mini-logo' />
                     </span>
                     <p class='event-item-title'>Smart Mobility <br /> Challenge</p>
-                    <span>
+                    <span class='event-item-bottom'>
                         <span></span>
                         <span></span>
                         <span></span>
@@ -210,7 +208,12 @@
         </div>
         <div class="col-5  p-0">
             <div class="big-logo-circle">
-                <img src="{{asset('./img/Groupe 10159.svg')}}" alt="">
+                <img class='big-logo in-middle' src="{{asset('./img/Groupe 10159.svg')}}" alt="hack !T logo">
+                <img class='big-logo in-left' src="{{asset('./img/Groupe 10158.svg')}}" alt="Leapfrog logo">
+                <img class='big-logo in-left' src="{{asset('./img/Groupe 10161.svg')}}" alt="ConfsDay logo">
+                <img class='big-logo in-left' src="{{asset('./img/Groupe 10161.svg')}}" alt="LHD logo">
+                <img class='big-logo in-left' src="{{asset('./img/Groupe 10164.svg')}}" alt="CasbahTech logo">
+                <img class='big-logo in-left' src="{{asset('./img/rectangle 55.png')}}" alt="SMC logo">
             </div>
         </div>
     </div>
