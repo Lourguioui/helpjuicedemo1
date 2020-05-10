@@ -30,17 +30,20 @@ function animateLogos(j) {
                 const element = indexesInRight[i];
                 setTimeout(() => {
                     if (j === element) {
-                        console.log('hna')
                         document.querySelectorAll('.big-logo')[element].classList.replace('in-right', 'in-middle')
                         indexesInRight.shift()
                         setTimeout(() => {
                             setPointerEvents('.mini-logo','all')
                         }, 300)
                     } else {
+                        document.querySelectorAll('.big-logo')[element].setAttribute('transition-duration','.6s')
                         document.querySelectorAll('.big-logo')[element].classList.replace('in-right', 'in-left')
+                        setTimeout(()=>{
+                            document.querySelectorAll('.big-logo')[element].setAttribute('transition-duration','.3s')
+                        },600)
                         indexesInRight.shift()
                     }
-                }, 200)
+                }, 150*(i+1))
             }
         }
     }
