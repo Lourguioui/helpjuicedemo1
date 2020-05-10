@@ -1,0 +1,97 @@
+header {
+    padding: 10px 10vw;
+    height: 15vh;
+    width: 100%;
+    max-height: 100px;
+    position: fixed;
+    font-size: 1em;
+    z-index: 100;
+}
+header img {
+    z-index: 2;
+    width: 100px;
+}
+
+.header-bg {
+    background-color: rgba(0,0,0,0.0);
+    background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(0,0,0,0.00)),color-stop( 100% , rgba(0,0,0,0.00)));
+    background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+    background-image: linear-gradient(180deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    box-sizing: border-box;
+}
+
+header ul {
+    z-index: 2;
+    list-style: none;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+@media screen and (max-width: 1000px) {
+    header  ul * {
+        display: none;
+    }
+
+}
+
+header ul li {
+    float: left;
+    height: min-content;
+    margin-right: 10px;
+    margin-left: 24px;
+}
+
+header ul li a {
+    font-family: "GilroyExtraBold";
+    font-size: 1rem;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+header ul li a:hover {
+    text-decoration: none;
+    color: #cccccc;
+}
+
+header .btn-burger {
+    display: none;
+    width: 30px;
+    z-index: 3;
+    height: 30px;
+}
+
+header  .btn-burger > img {
+    width: 30px;
+}
+
+@media screen and (max-width: 999px) {
+    header .btn-burger {
+        display: block;
+    }
+
+}
+
+.logo img {
+    float: left;
+    display: inline-block;
+    position: relative;
+    height: 64.24px;
+    width: 47.01px;
+    max-width: 80%;
+    -webkit-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+

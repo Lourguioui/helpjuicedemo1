@@ -1,7 +1,4 @@
-<div class="hero-image">
-    <br>
-<br>
-<br>
+<div class="hero-image" id="hero">
     <div class="container">
         <div class="row">
             <div class="col-lg-1"></div>
@@ -23,8 +20,13 @@
                 <p id="date">
                     <span id="spanDate"></span>
                 </p>
+                <div class="arrow bounce">
+                    <i class="fas fa-angle-double-down fa-3x"></i>
+                  </div>
+                </div>
             </div>
             <div class="col-lg-4 col-sm-12">
+                <!--Animation-->
             </div>
             <div class="col-lg-1"></div>
         </div>
