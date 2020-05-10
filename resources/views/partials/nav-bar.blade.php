@@ -7,7 +7,6 @@
         </a>
     </div>
     <ul class="d-flex flex-sm-row-reverse justify-content-sm-around align-items-center">
-        <li><a data-scroll href="#otherpages">Other Pages</a></li>
         <li><a data-scroll href="#faq">FAQ</a></li>
         <li><a data-scroll href="#media">Media</a></li>
         <li><a data-scroll href="#supportus">SupportUs</a></li>

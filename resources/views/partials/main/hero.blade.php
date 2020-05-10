@@ -21,12 +21,12 @@
                     <span id="spanDate"></span>
                 </p>
                 <div class="arrow bounce">
-                    <i class="fas fa-angle-double-down fa-3x"></i>
+                    <i class="fas fa-angle-double-down fa-2x"></i>
                   </div>
                 </div>
             </div>
             <div class="col-lg-4 col-sm-12">
-                <!--Animation-->
+                <!--Animation -->
             </div>
             <div class="col-lg-1"></div>
         </div>
