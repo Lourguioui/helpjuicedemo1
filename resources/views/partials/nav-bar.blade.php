@@ -1,4 +1,3 @@
-
 <header class="d-flex flex-row justify-content-between align-content-center">
     <div class="header-bg"></div>
     <div class="logo">
@@ -7,6 +6,15 @@
         </a>
     </div>
     <ul class="d-flex flex-sm-row-reverse justify-content-sm-around align-items-center">
+        <li class="dropdown">
+            <a>Other Pages</a>
+            <div class="dropdown-content">
+                <p><a href="#">CSE Vision</a></p>
+                <p><a href="#">Become Partner</a></p>
+                <p><a href="#">Members</a></p>
+                <p><a href="#">Join CSE</a></p>
+            </div>
+        </li>
         <li><a data-scroll href="#faq">FAQ</a></li>
         <li><a data-scroll href="#media">Media</a></li>
         <li><a data-scroll href="#supportus">SupportUs</a></li>
@@ -27,7 +35,6 @@
     headerBg.style.opacity = 0 ;
     window.addEventListener("scroll", () => {
     height = 2 * hero.offsetHeight / 3;
-
     headerBg.style.opacity = window.scrollY / height ;
     });
 </script>
