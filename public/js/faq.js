@@ -1,8 +1,7 @@
-const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
+const accordionItemHeaders = document.querySelectorAll(".neuo-checkbox");
 
 accordionItemHeaders.forEach(accordionItemHeader => {
-  accordionItemHeader.addEventListener("click", event => {
-
+  accordionItemHeader.addEventListener("change", event => {
     const currentlyActiveAccordionItemHeader = document.querySelector(".accordion-item-header.active");
     if (currentlyActiveAccordionItemHeader && currentlyActiveAccordionItemHeader !== accordionItemHeader) {
       currentlyActiveAccordionItemHeader.classList.toggle("active");
@@ -10,7 +9,7 @@ accordionItemHeaders.forEach(accordionItemHeader => {
     }
 
     accordionItemHeader.classList.toggle("active");
-    const accordionItemBody = accordionItemHeader.nextElementSibling;
+    const accordionItemBody = accordionItemHeader.parentElement.nextElementSibling;
     if (accordionItemHeader.classList.contains("active")) {
       accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
     }
