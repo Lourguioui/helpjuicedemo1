@@ -4,9 +4,9 @@
             <div class="col-md-6">
                 <div class="row">
                     <div class="col-12">
-                        <p class="title">
+                        <h3 class="title">
                             Support Us.
-                        </p>
+                        </h3>
                     </div>
                 </div>
                 <p>

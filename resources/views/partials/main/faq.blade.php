@@ -3,9 +3,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <p class="title text-center">
+                    <h3 class="title text-center">
                         FAQ.
-                    </p>
+                    </h3>
                 </div>
             </div>
             <div class="row">

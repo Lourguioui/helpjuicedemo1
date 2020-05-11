@@ -4,9 +4,9 @@
             <div class="col-md-12 col-sm-12">
                 <div class="row mt-5 mb-3">
                     <div class="col-12">
-                        <p class="title">
+                        <h3 class="title">
                             Follow Us.
-                        </p>
+                        </h3>
                     </div>
                 </div>
                 <div class="row mb-4 justify-content-md-center">
