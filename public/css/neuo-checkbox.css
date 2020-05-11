@@ -30,4 +30,13 @@
 .neuo-checkbox label .icon-box i {
   font-size: 15px;
   color: #fff;
+  transition: transform 0.25s ease-out;
+}
+
+.neuo-checkbox label :checked ~ .icon-box i {
+  transform: rotate(180deg);
+}
+
+.neuo-checkbox label :checked ~ .icon-box i:before {
+  content: "\f068";
 }
