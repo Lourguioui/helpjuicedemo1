@@ -39,7 +39,7 @@ Route::get('/media-coverage', function () {
 
 Route::get('/become-partner', function () {
     return view('become-partner');
-});
+})->name('partner');
 
 Route::get('/members', function () {
     return view('members');
