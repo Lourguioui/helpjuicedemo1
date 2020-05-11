@@ -1,6 +1,8 @@
 @import url("./button.css");
 @import url("./faq.css");
 @import url("./support.css");
+@import url("./footer.css");
+@import url("./up.css");
 
 @font-face {
   font-family: "GilroyLight";
@@ -39,6 +41,10 @@ p {
 .nav-item {
   font-family: "GilroyExtraBold";
   font-size: 1rem;
+}
+
+.bold {
+  font-family: "GilroyExtraBold";
 }
 
 .primary {

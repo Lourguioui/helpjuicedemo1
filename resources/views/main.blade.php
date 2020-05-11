@@ -31,7 +31,10 @@
 {{-- Include Scripts that are used only in this page in this section --}}
 @section('scripts')
 <script src="{{asset('js/faq.js')}}"></script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbkAc5WgnIYDkqCPo0c5beRSFjtDcOsOM &callback=initMap"></script>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbkAc5WgnIYDkqCPo0c5beRSFjtDcOsOM &callback=initMap">
+</script>
 <script src="{{asset('js/init.js')}}"></script>
+<script src="{{asset('js/up.js')}}"></script>
 
 @endsection
