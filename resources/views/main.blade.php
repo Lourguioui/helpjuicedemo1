@@ -37,5 +37,6 @@
 <script src="{{asset('js/init.js')}}"></script>
 <script src="{{asset('js/up.js')}}"></script>
 <script src="{{asset('js/hero.js')}}"></script>
+<script src="{{asset('js/main.js')}}"></script>
 
 @endsection
