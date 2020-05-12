@@ -88,4 +88,4 @@
     </div>
 </footer>
 
-<a id="up"></a>
+<a id="up" href="#hero"></a>
