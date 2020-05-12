@@ -20,7 +20,7 @@
                     <span id="spanDate"></span>
                 </p>
                 <div class="arrow bounce">
-                    <i class="fas fa-angle-double-down fa-2x"></i>
+                    <a href="#faq"><i class="fas fa-angle-double-down fa-2x"></i></a>
                   </div>
                 </div>
             <div class="col-lg-4 col-sm-12">

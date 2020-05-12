@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 <footer>
     <div class="container">
         <div class="row justify-content-center">
@@ -91,4 +89,3 @@
 </footer>
 
 <a id="up"></a>
->>>>>>> 6f5ed2078adde399da896eb238b2cf2dc572497c

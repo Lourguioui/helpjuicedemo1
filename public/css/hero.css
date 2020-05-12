@@ -33,6 +33,7 @@ a { color: white; text-decoration: none; }
   height: 20px;
   text-align: center;
   margin: 8% 0;
+  cursor: pointer;
 }
 .bounce {
   -moz-animation: bounce 2s infinite;
