@@ -79,7 +79,9 @@
     -ms-transition: .3s all ease-in;
     -o-transition: .3s all ease-in;
 }
-
+.big-logo-circle> .lhd-logo{
+    height: 40%;
+}
 .in-middle{
     transform: translateX(0) !important;
     -webkit-transform: translateX(0) !important;
@@ -185,7 +187,7 @@
 }
 
 .event-item>.event-item-top>.mini-logo {
-    z-index: 100;
+    z-index: 3;
     height: 55%;
     cursor: pointer;
     transform: scale(0.8);

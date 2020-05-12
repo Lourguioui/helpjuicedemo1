@@ -208,12 +208,12 @@
         </div>
         <div class="col-5  p-0">
             <div class="big-logo-circle">
-                <img class='big-logo in-middle' src="{{asset('./img/Groupe 10159.svg')}}" alt="hack !T logo">
-                <img class='big-logo in-left' src="{{asset('./img/Groupe 10158.svg')}}" alt="Leapfrog logo">
+                <img class='big-logo in-middle' src="{{asset('./img/Groupe 37629.png')}}" alt="hack !T logo">
+                <img class='big-logo in-left' src="{{asset('./img/Groupe 37630.png')}}" alt="Leapfrog logo">
                 <img class='big-logo in-left' src="{{asset('./img/Groupe 10161.svg')}}" alt="ConfsDay logo">
-                <img class='big-logo in-left' src="{{asset('./img/Groupe 10161.svg')}}" alt="LHD logo">
-                <img class='big-logo in-left' src="{{asset('./img/Groupe 10164.svg')}}" alt="CasbahTech logo">
-                <img class='big-logo in-left' src="{{asset('./img/rectangle 55.png')}}" alt="SMC logo">
+                <img class='big-logo lhd-logo in-left' src="{{asset('./img/Asset 2.png')}}" alt="LHD logo">
+                <img class='big-logo in-left' src="{{asset('./img/Groupe 37631.png')}}" alt="CasbahTech logo">
+                <img class='big-logo in-left' src="{{asset('./img/Groupe 10159.svg')}}" alt="SMC logo">
             </div>
         </div>
     </div>
