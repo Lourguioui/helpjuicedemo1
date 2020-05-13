@@ -1,36 +1,47 @@
-
+#aboutus{
+ align-items: center;
+}
+#images{
+  /*flex-direction: column;*/
+  flex-direction: row;
+    align-items: center;
+   /* align-content: center;
+    align-self: center;*/
+}
 .img1{
-    margin-left: 150px;
+     /* float: right;*/
       width:  449px;
       height: 298px;
       border: 13px solid #fff;
-      position: absolute;
+      /*position: absolute;*/
       background-image: url("../img/team1.jpg");
       background-size: cover;
-      animation: fade 15s infinite;
+      animation: fade 25s infinite;
       /*animation: boxmove 5s infinite;*/
   }
   .img2{
+    z-index: 1;
     transform: rotate(-5deg);
-    margin-top: 150px;
+    margin-top: -30px;
     width:  449px;
     height: 298px;
     border: 13px solid #fff;
-    position: absolute;
-    background-image: url("../img/team2.jpg");
+    /*position: absolute;*/
+    background-image: url("../img/team3.jpg");
     background-size: cover;
-    animation: fade2 15s infinite 3s;
+    animation: fade2 25s infinite 2.5s;
     /*animation: boxmove2 5s infinite;*/
   }
   .non-specified{
-    width: 810px;
-    height: 230px;
+    width: 900px;
+    height: 250px;
     position: relative;
   }
   #non-specified{
-    margin-top: 130px;
+    margin-top: 40px;
   }
   .circle{
+    z-index: 1;
     background-color: #fff  ;
     height: 45px;
     width: 45px;
@@ -43,25 +54,37 @@
   }
   
   @keyframes fade{
-    33%{
+    20%{
       background-image: url("../img/team2.jpg");
     }
-    66%{
+    40%{
       background-image: url("../img/team3.jpg");
+    }
+    60%{
+      background-image: url("../img/team4.jpg");
+    }
+    80%{
+      background-image: url("../img/team5.jpg");
     }
     100%{
       background-image: url("../img/team1.jpg");
     }
   }
   @keyframes fade2{
-    33%{
-      background-image: url("../img/team3.jpg");
+    20%{
+      background-image: url("../img/team4.jpg");
     }
-    66%{
+    40%{
+      background-image: url("../img/team5.jpg");
+    }
+    60%{
       background-image: url("../img/team1.jpg");
     }
-    100%{
+    80%{
       background-image: url("../img/team2.jpg");
+    }
+    100%{
+      background-image: url("../img/team3.jpg");
     }
   }
   /* @keyframes boxmove{
