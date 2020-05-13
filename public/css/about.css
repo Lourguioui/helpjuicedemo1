@@ -1,4 +1,4 @@
-/***********************About us ****************/
+
 .img1{
     margin-left: 150px;
       width:  449px;
@@ -19,16 +19,27 @@
     position: absolute;
     background-image: url("../img/team2.jpg");
     background-size: cover;
-    animation: fade2 15s infinite;
+    animation: fade2 15s infinite 3s;
     /*animation: boxmove2 5s infinite;*/
   }
-  .idk{
+  .non-specified{
     width: 810px;
     height: 230px;
     position: relative;
   }
-  #idk{
+  #non-specified{
     margin-top: 130px;
+  }
+  .circle{
+    background-color: #fff  ;
+    height: 45px;
+    width: 45px;
+    border: 10px solid #fff;
+    border-radius: 100%;
+    position: absolute;
+    right: 0;
+    animation: ballmove 1s infinite;
+    
   }
   
   @keyframes fade{
@@ -87,4 +98,14 @@
       margin-left: 0px;
     }
   } */
-  /**************************************************/
+  @keyframes ballmove{
+    0%{
+      margin-top: -200px;
+    }
+    50%{
+      margin-top: -45px;
+    }
+    100%{
+      margin-top : -200px;
+    }
+  }

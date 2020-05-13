@@ -16,10 +16,10 @@
     <div class="col-lg-1" > </div>
 </div>
 
-    <div class="row" id="idk">
+    <div class="row" id="non-specified">
     <div class="col-lg-1" > </div>
     <div class="col-lg-6" >
-        
-       <img src="{{asset('img/group.png')}}" alt="idk" class="idk">
+        <div class="circle"><p>;</p></div>
+       <img src="{{asset('img/group.png')}}" alt="idk" class="non-specified">
     </div>
     </div>
