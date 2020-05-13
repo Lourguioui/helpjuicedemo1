@@ -40,7 +40,7 @@ body {
     background-image: url("../img/team1.jpg");
     background-size: cover;
     animation: fade 15s infinite;
-    animation: boxmove 5s infinite;
+    /*animation: boxmove 5s infinite;*/
 }
 .img2{
   transform: rotate(-5deg);
@@ -52,7 +52,7 @@ body {
   background-image: url("../img/team2.jpg");
   background-size: cover;
   animation: fade2 15s infinite;
-  animation: boxmove2 5s infinite;
+  /*animation: boxmove2 5s infinite;*/
 }
 .idk{
   width: 810px;
@@ -85,7 +85,7 @@ body {
     background-image: url("../img/team2.jpg");
   }
 }
-@keyframes boxmove{
+/* @keyframes boxmove{
   0%{
   transform: rotate(0deg);
   margin-top: 0px;
@@ -118,7 +118,7 @@ body {
     margin-top: 150px;
     margin-left: 0px;
   }
-}
+} */
 /**************************************************/
 p {
   font-family: "GilroyLight";
