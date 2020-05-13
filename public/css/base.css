@@ -53,3 +53,8 @@ p {
 .primary {
   color: #383d59;
 }
+
+section {
+  padding-bottom: 3rem !important;
+  padding-top: 3rem !important;
+}
