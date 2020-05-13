@@ -2,17 +2,19 @@
  align-items: center;
 }
 #images{
-  /*flex-direction: column;*/
-  flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-   /* align-content: center;
-    align-self: center;*/
+    align-content: center;
+    align-self: center;
+    padding-left: 10%;
 }
 .img1{
      /* float: right;*/
       width:  449px;
       height: 298px;
       border: 13px solid #fff;
+      margin-left: 80px;
       /*position: absolute;*/
       background-image: url("../img/team1.jpg");
       background-size: cover;
@@ -20,7 +22,6 @@
       /*animation: boxmove 5s infinite;*/
   }
   .img2{
-    z-index: 1;
     transform: rotate(-5deg);
     margin-top: -30px;
     width:  449px;
@@ -123,12 +124,12 @@
   } */
   @keyframes ballmove{
     0%{
-      margin-top: -200px;
+      margin-top: -220px;
     }
     50%{
       margin-top: -45px;
     }
     100%{
-      margin-top : -200px;
+      margin-top : -220px;
     }
   }
