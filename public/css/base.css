@@ -40,6 +40,7 @@ body {
     background-image: url("../img/team1.jpg");
     background-size: cover;
     animation: fade 15s infinite;
+    animation: boxmove 5s infinite;
 }
 .img2{
   transform: rotate(-5deg);
@@ -51,14 +52,8 @@ body {
   background-image: url("../img/team2.jpg");
   background-size: cover;
   animation: fade2 15s infinite;
+  animation: boxmove2 5s infinite;
 }
- #img1{
-    margin-left: 150px;
-} 
-#img2{
-  margin-top: 150px;
-  transform: rotate(-5deg);
-} 
 .idk{
   width: 810px;
   height: 230px;
@@ -88,6 +83,40 @@ body {
   }
   100%{
     background-image: url("../img/team2.jpg");
+  }
+}
+@keyframes boxmove{
+  0%{
+  transform: rotate(0deg);
+  margin-top: 0px;
+  margin-left: 150px;
+  }
+  50%{
+    transform: rotate(-5deg);
+    margin-top: 150px;
+    margin-left: 0px;
+  }
+  100%{
+    transform: rotate(0deg);
+    margin-top: 0px;
+    margin-left: 150px;
+  }
+}
+@keyframes boxmove2{
+  0%{
+  transform: rotate(-5deg);
+  margin-top: 150px;
+  margin-left: 0px;
+  }
+  50%{
+    transform: rotate(0deg);
+    margin-top: 0px;
+    margin-left: 150px;
+  }
+  100%{
+    transform: rotate(-5deg);
+    margin-top: 150px;
+    margin-left: 0px;
   }
 }
 /**************************************************/
