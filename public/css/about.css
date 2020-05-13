@@ -1,22 +1,21 @@
 #aboutus{
  align-items: center;
+ justify-content: center;
+ align-items: center;
+ align-content: center;
+ align-self: center;
 }
-#images{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    align-self: center;
-    padding-left: 10%;
+p{
+  line-height: 2;
 }
 .img1{
      /* float: right;*/
-      width:  449px;
-      height: 298px;
+      width:  405px;
+      height: 270px;
       border: 13px solid #fff;
-      margin-left: 80px;
+      margin-left: 10%;
       /*position: absolute;*/
-      background-image: url("../img/team1.jpg");
+      background-image: url("../img/team1.png");
       background-size: cover;
       animation: fade 25s infinite;
       /*animation: boxmove 5s infinite;*/
@@ -24,22 +23,26 @@
   .img2{
     transform: rotate(-5deg);
     margin-top: -30px;
-    width:  449px;
-    height: 298px;
+    width:  405px;
+    height: 270px;
     border: 13px solid #fff;
     /*position: absolute;*/
-    background-image: url("../img/team3.jpg");
+    background-image: url("../img/team3.png");
     background-size: cover;
     animation: fade2 25s infinite 2.5s;
     /*animation: boxmove2 5s infinite;*/
   }
   .non-specified{
-    width: 900px;
+    width: 100%;
+
     height: 250px;
     position: relative;
   }
   #non-specified{
     margin-top: 40px;
+  }
+  #wall{
+    margin-left: 2%;
   }
   .circle{
     z-index: 1;
@@ -48,44 +51,60 @@
     width: 45px;
     border: 10px solid #fff;
     border-radius: 100%;
-    position: absolute;
-    right: 0;
-    animation: ballmove 1s infinite;
+    position: relative;
+    float: right;
+    margin-right: 20px;
+    animation: ballmove 1.5s ease-in-out infinite;
+    transform: translateX(50%) rotateX(0deg) scale(1);
+    z-index: 2;
     
+  }
+  .shadow {
+    width: 45px;
+    height: 45px;
+    background-color: white;
+    position: absolute;
+    right: 50%;
+   /* bottom: -112px;*/
+    border-radius: 50%;
+    transform: rotateX(90deg) rotateY(0.5deg) translateX(50%) scale(1.1);
+    transform-origin: right 50%;
+    z-index: 1;
+    animation: shadow 1.5s ease-in-out infinite;
   }
   
   @keyframes fade{
     20%{
-      background-image: url("../img/team2.jpg");
+      background-image: url("../img/team2.png");
     }
     40%{
-      background-image: url("../img/team3.jpg");
+      background-image: url("../img/team3.png");
     }
     60%{
-      background-image: url("../img/team4.jpg");
+      background-image: url("../img/team4.png");
     }
     80%{
-      background-image: url("../img/team5.jpg");
+      background-image: url("../img/team5.png");
     }
     100%{
-      background-image: url("../img/team1.jpg");
+      background-image: url("../img/team1.png");
     }
   }
   @keyframes fade2{
     20%{
-      background-image: url("../img/team4.jpg");
+      background-image: url("../img/team4.png");
     }
     40%{
-      background-image: url("../img/team5.jpg");
+      background-image: url("../img/team5.png");
     }
     60%{
-      background-image: url("../img/team1.jpg");
+      background-image: url("../img/team1.png");
     }
     80%{
-      background-image: url("../img/team2.jpg");
+      background-image: url("../img/team2.png");
     }
     100%{
-      background-image: url("../img/team3.jpg");
+      background-image: url("../img/team3.png");
     }
   }
   /* @keyframes boxmove{
@@ -128,6 +147,7 @@
     }
     50%{
       margin-top: -45px;
+      transform: translateX(50%) rotateX(40deg) scale(1.08);
     }
     100%{
       margin-top : -220px;
