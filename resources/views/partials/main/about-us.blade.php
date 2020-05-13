@@ -1,9 +1,10 @@
 <div class="row" id="aboutus">
     <div class="col-lg-1" > </div>
     <div class="col-lg-6" >
-
-        <img src="{{asset('img/team1.jpg')}}" alt="team1" class="imgfade" id="img1" >
-        <img src="{{asset('img/team2.jpg')}}" alt="team2" class="imgfade" id="img2">    
+        <div class="img1"></div>
+        <div class="img2"></div>
+        <!-- <img src="{{asset('img/team1.jpg')}}" alt="team1" class="imgfade" id="img1" >
+        <img src="{{asset('img/team2.jpg')}}" alt="team2" class="imgfade" id="img2">     -->
      
     </div>
     <div class="col-lg-4" >
