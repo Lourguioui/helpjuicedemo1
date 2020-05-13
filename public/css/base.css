@@ -1,4 +1,10 @@
 @import url("./button.css");
+@import url("./navbar.css");
+@import url("./hero.css");
+@import url("./faq.css");
+@import url("./support.css");
+@import url("./footer.css");
+@import url("./up.css");
 
 @font-face {
   font-family: "GilroyLight";
@@ -13,6 +19,10 @@
   font-weight: bolder;
   font-style: normal;
 }
+/*
+html {
+  scroll-behavior: smooth;
+}*/
 
 body {
   background-color: #383d59;
@@ -37,6 +47,10 @@ p {
 .nav-item {
   font-family: "GilroyExtraBold";
   font-size: 1rem;
+}
+
+.bold {
+  font-family: "GilroyExtraBold";
 }
 
 .primary {
