@@ -4,9 +4,14 @@
  align-items: center;
  align-content: center;
  align-self: center;
+
 }
 p{
   line-height: 2;
+}
+#separator{
+  background-color: yellow;
+  padding-left: 20px;
 }
 .img1{
      /* float: right;*/
@@ -33,6 +38,9 @@ p{
     animation: fade2 25s infinite 2.5s;
     /*animation: boxmove2 5s infinite;*/
   }
+ /* #aboutustext{
+    margin-left: 20px;
+ }*/
   .non-specified{
     width: 100%;
 
