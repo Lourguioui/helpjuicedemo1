@@ -1,0 +1,43 @@
+#up {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #383d59;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 6px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #fff;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  transform: rotate(45deg);
+}
+#up::after {
+  transform: rotate(-45deg);
+  display: inline-block;
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#up:hover {
+  cursor: pointer;
+  background-color: #0b0c12;
+}
+#up:active {
+  background-color: #555;
+}
+#up.show {
+  opacity: 1;
+  visibility: visible;
+}

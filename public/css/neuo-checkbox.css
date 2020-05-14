@@ -1,0 +1,42 @@
+.neuo-checkbox {
+  position: relative;
+  list-style: none;
+  text-align: center;
+}
+.neuo-checkbox label {
+  position: relative;
+  cursor: pointer;
+}
+.neuo-checkbox label input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+}
+.neuo-checkbox label :checked ~ .icon-box {
+  box-shadow: inset -2px -2px 5px #444b72, inset 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+.neuo-checkbox label :checked ~ .icon-box i {
+  transform: scale(0.95);
+}
+.neuo-checkbox label .icon-box {
+  width: 50px;
+  height: 50px;
+  background: #383d59;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -2px -2px 5px #444b72, 3px 3px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+}
+.neuo-checkbox label .icon-box i {
+  font-size: 15px;
+  color: #fff;
+  transition: transform 0.25s ease-out;
+}
+
+.neuo-checkbox label :checked ~ .icon-box i {
+  transform: rotate(180deg);
+}
+
+.neuo-checkbox label :checked ~ .icon-box i:before {
+  content: "\f068";
+}
