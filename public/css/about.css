@@ -13,7 +13,7 @@ p{
       width:  405px;
       height: 270px;
       border: 13px solid #fff;
-      margin-left: 10%;
+      margin-left:15%;
       /*position: absolute;*/
       background-image: url("../img/team1.png");
       background-size: cover;
@@ -26,6 +26,7 @@ p{
     width:  405px;
     height: 270px;
     border: 13px solid #fff;
+    margin-left: -10%;
     /*position: absolute;*/
     background-image: url("../img/team3.png");
     background-size: cover;
@@ -52,25 +53,12 @@ p{
     border: 10px solid #fff;
     border-radius: 100%;
     position: absolute;
-    right: 40px;
+    right: 20px;
     margin-right: 20px;
     animation: ballmove 1s ease-in-out infinite;
     transform: translateX(50%) rotateX(0deg) scale(1);
     z-index: 2;
     
-  }
-  .shadow {
-    width: 45px;
-    height: 45px;
-    background-color: white;
-    position: absolute;
-    right: 50%;
-   /* bottom: -112px;*/
-    border-radius: 50%;
-    transform: rotateX(90deg) rotateY(0.5deg) translateX(50%) scale(1.1);
-    transform-origin: right 50%;
-    z-index: 1;
-    animation: shadow 1.5s ease-in-out infinite;
   }
   
   @keyframes fade{

@@ -1,3 +1,5 @@
+<section id="aboutu">
+    <div class="container">
 <div class="row" id="aboutus">
     <div class="col-lg-1" ></div>
     <div class="col-lg-4" id="images" >
@@ -29,3 +31,5 @@
        <img src="{{asset('img/Shelf.png')}}" alt="idk" class="non-specified">
     </div>
 </div>
+</div>
+</section>
