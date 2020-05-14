@@ -2,6 +2,7 @@ footer {
   background: transparent linear-gradient(180deg, #383d59 0%, #0b0c12 100%) 0%
     0% no-repeat padding-box;
   text-align: center;
+  margin-top: 4rem !important;
 }
 
 .footer_social {
