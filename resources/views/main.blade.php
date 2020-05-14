@@ -3,10 +3,13 @@
 
 {{-- Include Styles that are used only in this page in this section --}}
 @section('styles')
+
 <link rel="stylesheet" href="{{asset('css/hero.css')}}">
+<link rel="stylesheet" href="{{ asset('css/events.css') }}">
 <link rel="stylesheet" href="{{asset('css/faq.css')}}">
 <link rel="stylesheet" href="{{asset('css/support.css')}}">
 <link rel="stylesheet" href="{{asset('css/projects.css')}}">
+
 @endsection
 
 {{-- Each section of this page should be in a file, the file must be in this directory partials/{page-name}/ --}}
@@ -33,6 +36,7 @@
 
 {{-- Include Scripts that are used only in this page in this section --}}
 @section('scripts')
+<script src="{{ asset('js/events.js') }}"></script>
 <script src="{{asset('js/faq.js')}}"></script>
 <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbkAc5WgnIYDkqCPo0c5beRSFjtDcOsOM &callback=initMap">
@@ -41,5 +45,4 @@
 <script src="{{asset('js/up.js')}}"></script>
 <script src="{{asset('js/hero.js')}}"></script>
 <script src="{{asset('js/main.js')}}"></script>
-
 @endsection
