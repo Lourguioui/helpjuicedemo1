@@ -1,4 +1,7 @@
 @import url("./button.css");
+@import url("./navbar.css");
+@import url("./footer.css");
+@import url("./up.css");
 
 @font-face {
   font-family: "GilroyLight";
@@ -13,6 +16,10 @@
   font-weight: bolder;
   font-style: normal;
 }
+/*
+html {
+  scroll-behavior: smooth;
+}*/
 
 body {
   background-color: #383d59;
@@ -26,14 +33,14 @@ body {
 
 .title {
   font-family: "GilroyExtraBold";
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 
 
 p {
   font-family: "GilroyLight";
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 
 .nav-item {
@@ -41,6 +48,15 @@ p {
   font-size: 1rem;
 }
 
+.bold {
+  font-family: "GilroyExtraBold";
+}
+
 .primary {
   color: #383d59;
+}
+
+section {
+  padding-bottom: 3rem !important;
+  padding-top: 3rem !important;
 }

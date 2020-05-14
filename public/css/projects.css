@@ -1,0 +1,21 @@
+.carousel-item {
+  text-align: center;
+}
+.carousel-indicators {
+  align-items: center;
+  bottom: -50px;
+}
+
+.carousel-indicators .active {
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+}
+
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  background-color: #afafaf;
+  background-clip: padding-box;
+  border-radius: 100%;
+}

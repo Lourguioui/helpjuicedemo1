@@ -1,0 +1,132 @@
+footer {
+  background: transparent linear-gradient(180deg, #383d59 0%, #0b0c12 100%) 0%
+    0% no-repeat padding-box;
+  text-align: center;
+  margin-top: 4rem !important;
+}
+
+.footer_social {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer_social > li {
+  background-color: #efefef;
+  border-radius: 10px;
+  height: 50px;
+  width: 50px;
+  padding: 10px;
+}
+
+.footer_made {
+  color: white;
+}
+
+.devs {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.devs > li > a > img {
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+}
+
+.copyright {
+  font-size: 13px;
+  color: white;
+  letter-spacing: 0.97px;
+  margin-top: 6rem;
+}
+
+/** Social media icons **/
+
+.social-btns .btn,
+.social-btns .btn:before,
+.social-btns .btn .fa {
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+  -webkit-transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+  transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+.social-btns .btn:before {
+  top: 90%;
+  left: -110%;
+}
+.social-btns .btn .fa {
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8);
+}
+.social-btns .btn:before {
+  background-color: #383d59;
+}
+.social-btns .btn i {
+  color: #383d59;
+}
+
+.social-btns .btn:focus:before,
+.social-btns .btn:hover:before {
+  top: -10%;
+  left: -10%;
+}
+.social-btns .btn:focus i,
+.social-btns .btn:hover i {
+  color: #fff;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+.social-btns {
+  margin: auto;
+  font-size: 0;
+  text-align: center;
+
+  left: 0;
+  right: 0;
+}
+.social-btns .btn {
+  display: inline-block;
+  background-color: #fff;
+  width: 65px;
+  height: 65px;
+  line-height: 50px;
+  margin: 10px 10px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 28%;
+  -webkit-box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.1);
+  opacity: 0.99;
+}
+.social-btns .btn:before {
+  content: "";
+  width: 120%;
+  height: 120%;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.social-btns .btn i {
+  font-size: 1.5rem;
+  vertical-align: middle;
+}
+
+.links h3 {
+  font-size: 1.5rem;
+}
+
+.links p {
+  margin-bottom: 0;
+}
+
+.links p:hover {
+  color: rgb(199, 199, 199) !important;
+}
+
+.links a:hover {
+  margin-bottom: 0;
+  text-decoration: none;
+}

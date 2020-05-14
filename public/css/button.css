@@ -8,6 +8,7 @@ button {
   /* padding: 10% 10%; */
   color: #fff;
   border: none;
+  font-weight: bold;
   background-color: transparent;
   cursor: pointer;
   position: relative;

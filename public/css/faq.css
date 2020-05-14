@@ -1,0 +1,49 @@
+@import url("./neuo-checkbox.css");
+
+.accordion {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0rem auto;
+}
+.accordion-item {
+  color: #fff;
+  margin: 1rem 0;
+  border-style: solid;
+  border-width: 0;
+  border-bottom-width: 1px;
+  border-bottom-color: rgb(133, 133, 133);
+}
+
+.accordion-item-header {
+  padding: 1rem 0rem 1.5rem 0rem;
+  min-height: 3.5rem;
+  line-height: 1.25rem;
+  font-family: "GilroyExtraBold";
+  display: flex;
+  font-size: 25px;
+  align-items: center;
+  position: relative;
+}
+/* .accordion-item-header::after {
+  content: "\002B";
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+}
+.accordion-item-header.active::after {
+  content: "\2212";
+} */
+.accordion-item-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.accordion-item-body-content {
+  padding: 1rem;
+  line-height: 1.5rem;
+}
+
+.accordion-item-header .neuo-checkbox {
+  position: absolute;
+  right: 1rem;
+}
