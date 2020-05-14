@@ -1,0 +1,59 @@
+#map {
+  border: double 15px transparent;
+  padding: 17px;
+  border-radius: 35px;
+  /* border-image-source: linear-gradient(45deg, #930F5B, #48154D);
+    border-image-slice: 1; */
+  background-image: linear-gradient(white, white),
+    radial-gradient(circle at top left, #434764 , #363951 );
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  
+  /* background: linear-gradient(
+    0deg,
+    rgba(67, 71, 100, 1) 0%,
+    rgba(54, 57, 81, 1) 100%
+  ); */
+  /* background: linear-gradient(
+        to left,
+        #434764 50%,
+        transparent 50%,
+        transparent 50%,
+        #434764 50%
+      )
+      top left no-repeat,
+    linear-gradient(
+        to left,
+        #363951 50%,
+        transparent 50%,
+        transparent 50%,
+        #363951 50%
+      )
+      bottom left no-repeat,
+    linear-gradient(
+        to top,
+        #363951 50%,
+        transparent 50%,
+        transparent 50%,
+        #434764 50%
+      )
+      top left no-repeat,
+    linear-gradient(
+        to top,
+        #363951 50%,
+        transparent 50%,
+        transparent 50%,
+        #434764 50%
+      )
+      top right no-repeat;
+  background-size: 100% 17px, 100% 17px, 17px 100%, 17px 100%; */
+  width: 100%;
+  height: 550px;
+  box-shadow: 3px 3px 16px 0px rgba(0, 0, 0, 0.16);
+}
+
+.map_container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
