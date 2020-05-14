@@ -16,7 +16,7 @@ var events = [
         logo: './img/Groupe 37629.png',
         alt: 'Hack !T logo',
         logo_className: 'hackit-logo',
-        video: './img/Image 5.png'
+        video: "https://www.youtube.com/embed/0weQDE2xqJo"
     },
     {
         name: 'Leapfrog',
@@ -25,7 +25,7 @@ var events = [
         logo: './img/Groupe 37630.png',
         logo_className: 'leapfrog-logo',
         alt: 'Leapfrog logo',
-        video: './img/Image 1.png'
+        video: "https://www.youtube.com/embed/OfvA7UXEPJE"
     },
     {
         name: 'ConfsDay',
@@ -34,7 +34,7 @@ var events = [
         logo: './img/Groupe 10161.svg',
         logo_className: 'confsday-logo',
         alt: 'ConfsDay logo',
-        video: './img/Image 1.png'
+        video: "https://www.youtube.com/embed/OfvA7UXEPJE"
     },
     {
         name: 'Local Hack Day',
@@ -43,7 +43,7 @@ var events = [
         logo: './img/Asset 2.png',
         logo_className: 'lhd-logo',
         alt: 'LHD logo',
-        video: './img/Image 1.png'
+        video: "https://www.youtube.com/embed/OfvA7UXEPJE"
     },
     {
         name: 'Casbahtech <br/> Hackathon',
@@ -52,7 +52,7 @@ var events = [
         logo: './img/Groupe 37631.png',
         logo_className: 'casbahtech-logo',
         alt: 'Casbahtch logo',
-        video: './img/Image 1.png'
+        video: "https://www.youtube.com/embed/OfvA7UXEPJE"
     },
     {
         name: 'Smart Mobility <br/> Challenge',
@@ -61,21 +61,24 @@ var events = [
         logo: 'img/Rectangle 55.png',
         logo_className: 'smc-logo',
         alt: 'SMC logo',
-        video: './img/Image 1.png'
+        video: "https://www.youtube.com/embed/OfvA7UXEPJE"
     },
 ]
 events.map((element, i) => {
+    var left_side_container=document.querySelector('.left-side-container')
+    var big_logo_circle=document.querySelector('.big-logo-circle')
+    var videos_container=document.querySelector('.videos-container')
     if (i === 1) {
         is_selected = ''
     }
     if (i === 0) {
-        document.querySelector('.big-logo-circle').innerHTML += '<img class="big-logo in-middle ' + element.logo_className + '" src="' + element.logo + '" alt="' + element.alt + '"/>'
-        document.querySelector('.pictures-container').firstElementChild.innerHTML += '<img src="' + element.video + '" alt="event-picture" class="event-picture is-showed"/>'
+        big_logo_circle.innerHTML += '<img class="big-logo in-middle ' + element.logo_className + '" src="' + element.logo + '" alt="' + element.alt + '"/>'
+        videos_container.firstElementChild.innerHTML +=  '<iframe class="event-video is-showed" src='+element.video+' frameborder="0"></iframe>'
     } else {
-        document.querySelector('.big-logo-circle').innerHTML += '<img class="big-logo in-left ' + element.logo_className + '" src="' + element.logo + '" alt="' + element.alt + '"/>'
-        document.querySelector('.pictures-container').firstElementChild.innerHTML += '<img src="' + element.video + '" alt="event-picture" class="event-picture "/>'
+        big_logo_circle.innerHTML += '<img class="big-logo in-left ' + element.logo_className + '" src="' + element.logo + '" alt="' + element.alt + '"/>'
+        videos_container.firstElementChild.innerHTML +=  '<iframe class="event-video" src="'+element.video+'"frameborder="0"></iframe>'
     }
-    document.querySelector('.left-side-container').innerHTML += "<div class='event-item " + is_selected + "'>" +
+    left_side_container.innerHTML += "<div class='event-item " + is_selected + "'>" +
         "<span class='event-item-top'>" +
         "<span></span>" +
         "<span></span>" +
@@ -178,8 +181,9 @@ document.querySelectorAll('.mini-logo').forEach(
                 preSelected.classList.remove('is-Selected')
                 newSelected.classList.add('is-Selected')
             }
-            document.querySelectorAll('.event-picture.is-showed')[0].classList.remove('is-showed')
-            document.querySelectorAll('.event-picture')[i].classList.add('is-showed')
+            document.querySelectorAll('.event-video.is-showed')[0].src=document.querySelectorAll('.event-video.is-showed')[0].src
+            document.querySelectorAll('.event-video.is-showed')[0].classList.remove('is-showed')
+            document.querySelectorAll('.event-video')[i].classList.add('is-showed')
         })
     }
 )
