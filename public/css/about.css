@@ -51,10 +51,10 @@ p{
     width: 45px;
     border: 10px solid #fff;
     border-radius: 100%;
-    position: relative;
-    float: right;
+    position: absolute;
+    right: 40px;
     margin-right: 20px;
-    animation: ballmove 1.5s ease-in-out infinite;
+    animation: ballmove 1s ease-in-out infinite;
     transform: translateX(50%) rotateX(0deg) scale(1);
     z-index: 2;
     
@@ -146,7 +146,7 @@ p{
       margin-top: -220px;
     }
     50%{
-      margin-top: -45px;
+      margin-top: -40px;
       transform: translateX(50%) rotateX(40deg) scale(1.08);
     }
     100%{
