@@ -1,6 +1,6 @@
 <section id="aboutu">
     <div class="container">
-<div class="row" id="aboutus">
+<div class="row" >
     <div class="col-lg-1" ></div>
     <div class="col-lg-4" id="images" >
      <div class="img1"></div>
