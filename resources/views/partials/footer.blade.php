@@ -12,7 +12,7 @@
                               <span class="input-group-text" id="inputGroup-sizing-default"><img src="{{asset('img/communications.svg')}}"></span>
                             </div>
                             <input type="text" class="form-control" aria-label="Default" style="border-style: hidden;"
-                            aria-describedby="inputGroup-sizing-default" placeholder="Enter you Email to subscribe to the newsletter">
+                            aria-describedby="inputGroup-sizing-default" placeholder="Enter your Email">
                             <div class="input-group-prepend">
                                 <span class="input-group-text" id="point-to"><img src="{{asset('img/point-to.svg')}}"></span>
                             </div>
