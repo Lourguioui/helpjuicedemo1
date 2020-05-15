@@ -33,6 +33,7 @@
 #up:hover {
   cursor: pointer;
   background-color: #0b0c12;
+  text-decoration: none;
 }
 #up:active {
   background-color: #555;

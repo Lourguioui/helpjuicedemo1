@@ -1,4 +1,4 @@
-<section id="faq" class="mt-4">
+<section id="faq">
     <div class="auto-container">
         <div class="container">
             <div class="row">

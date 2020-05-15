@@ -1,8 +1,5 @@
 @import url("./button.css");
 @import url("./navbar.css");
-@import url("./hero.css");
-@import url("./faq.css");
-@import url("./support.css");
 @import url("./footer.css");
 @import url("./up.css");
 
@@ -36,12 +33,12 @@ body {
 
 .title {
   font-family: "GilroyExtraBold";
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 p {
   font-family: "GilroyLight";
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 
 .nav-item {
@@ -55,4 +52,9 @@ p {
 
 .primary {
   color: #383d59;
+}
+
+section {
+  padding-bottom: 3rem !important;
+  padding-top: 3rem !important;
 }
