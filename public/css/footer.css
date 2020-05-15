@@ -130,3 +130,25 @@ footer {
   margin-bottom: 0;
   text-decoration: none;
 }
+
+#email {
+  margin: auto;
+  width: 280px;
+  border-radius: 10px;
+  font-family: GilroyLight;
+}
+
+#inputGroup-sizing-default {
+  background-color: #fff;
+}
+
+.input-group-prepend {
+  border-style: hidden;
+  border-radius: 100px;
+}
+
+#point-to {
+  background-color: #fff;
+  border-style: none;
+  cursor: pointer;
+}
