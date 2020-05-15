@@ -1,5 +1,5 @@
-<div id="events">
-    <div class="container" style="margin-top: 30px">
+<section id="events">
+    <div class="container">
         <div class="row justify-content-center">
             <div class="col- title">
                 Events.
@@ -23,8 +23,14 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid" style="margin-top: 30px; margin-bottom: 200px ">
+    <div class="container-fluid" style="margin-top: 30px;">
         <div class="row">
+            <div class="col-12 d-block d-md-none p-0 m-0">
+                <div class="events-names-list-container">
+                    <div class="events-names-list">
+                    </div>
+                </div>
+            </div>
             <div class="col-7 d-none d-md-block m-0">
                 <div class="line">
                     <span></span>
@@ -46,4 +52,4 @@
             </div>
         </div>
     </div>
-</div>
+</section>

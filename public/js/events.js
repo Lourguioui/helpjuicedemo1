@@ -65,20 +65,37 @@ var events = [
     },
 ]
 events.map((element, i) => {
-    var left_side_container=document.querySelector('.left-side-container')
-    var big_logo_circle=document.querySelector('.big-logo-circle')
-    var videos_container=document.querySelector('.videos-container')
+    var left_side_container = document.querySelector('.left-side-container')
+    var big_logo_circle = document.querySelector('.big-logo-circle')
+    var videos_container = document.querySelector('.videos-container')
+    var names_list = document.querySelector('.events-names-list')
+    var actual_name = document.createElement('p')
+    var current_img = document.createElement('div')
+    var current_video = document.createElement('div')
     if (i === 1) {
         is_selected = ''
     }
     if (i === 0) {
-        big_logo_circle.innerHTML += '<img class="big-logo in-middle ' + element.logo_className + '" src="' + element.logo + '" alt="' + element.alt + '"/>'
-        videos_container.firstElementChild.innerHTML +=  '<iframe class="event-video is-showed" src='+element.video+' frameborder="0"></iframe>'
+        current_img.innerHTML = '<img class="big-logo in-middle ' + element.logo_className + '" src="' + element.logo + '" alt="' + element.alt + '"/>'
+        big_logo_circle.appendChild(current_img.firstElementChild)
+        current_video.innerHTML = '<iframe class="event-video is-showed" src=' + element.video + ' frameborder="0"></iframe>'
+        videos_container.firstElementChild.appendChild(current_video.firstElementChild)
+        actual_name.classList.add('event-name-mobile', 'selected-event-name-mobile', 'bold')
     } else {
-        big_logo_circle.innerHTML += '<img class="big-logo in-left ' + element.logo_className + '" src="' + element.logo + '" alt="' + element.alt + '"/>'
-        videos_container.firstElementChild.innerHTML +=  '<iframe class="event-video" src="'+element.video+'"frameborder="0"></iframe>'
+        current_img.innerHTML = '<img class="big-logo in-left ' + element.logo_className + '" src="' + element.logo + '" alt="' + element.alt + '"/>'
+        big_logo_circle.appendChild(current_img.firstElementChild)
+        current_video.innerHTML = '<iframe class="event-video" src="' + element.video + '"frameborder="0"></iframe>'
+        videos_container.firstElementChild.appendChild(current_video.firstElementChild)
+        actual_name.classList.add('event-name-mobile')
     }
-    left_side_container.innerHTML += "<div class='event-item " + is_selected + "'>" +
+    actual_name.innerHTML = element.name
+    names_list.appendChild(actual_name)
+    left_side_container.appendChild(createEventItem(element,is_selected))
+})
+
+function createEventItem(element, is_selected) {
+    var event_item = document.createElement('div')
+    event_item.innerHTML = "<div class='event-item " + is_selected + "'>" +
         "<span class='event-item-top'>" +
         "<span></span>" +
         "<span></span>" +
@@ -91,14 +108,18 @@ events.map((element, i) => {
         "<span></span>" +
         "</span>" +
         "</div>"
-})
-
+    return event_item.firstElementChild
+}
 window.addEventListener('resize', () => {
-    document.querySelector('.left-side-container').scrollTo({
-        left: scroll_to_left ? (currentRow - 1) * document.querySelector('.left-side-container').clientWidth * 5 / 6 : (currentRow - 3) * document.querySelector('.left-side-container').clientWidth * 5 / 6,
-        behavior: 'smooth'
+    if (document.querySelectorAll('.mini-logo').length > 6) {
+        setTimeout(() => {
+            document.querySelector('.left-side-container').scrollTo({
+                left: scroll_to_left ? (currentRow - 1) * document.querySelector('.left-side-container').clientWidth * 5 / 6 : (currentRow - 3) * document.querySelector('.left-side-container').clientWidth * 5 / 6,
+                behavior: 'smooth'
 
-    })
+            })
+        }, 1)
+    }
 })
 
 
@@ -134,11 +155,7 @@ function animateLogos(j) {
                             setPointerEvents('.mini-logo', 'all')
                         }, 300)
                     } else {
-                        document.querySelectorAll('.big-logo')[element].setAttribute('transition-duration', '.6s')
                         document.querySelectorAll('.big-logo')[element].classList.replace('in-right', 'in-left')
-                        setTimeout(() => {
-                            document.querySelectorAll('.big-logo')[element].setAttribute('transition-duration', '.3s')
-                        }, 600)
                         indexesInRight.shift()
                     }
                 }, 150 * (i + 1))
@@ -146,11 +163,14 @@ function animateLogos(j) {
         }
     }
 }
+
 document.querySelectorAll('.mini-logo').forEach(
     (element, i) => {
         element.addEventListener('click', (e) => {
             animateLogos(i)
-            preSelected = document.querySelectorAll('.is-Selected')[0]
+            document.querySelector('.selected-event-name-mobile').classList.remove('bold', 'selected-event-name-mobile')
+            document.querySelectorAll('.event-name-mobile')[i].classList.add('bold', 'selected-event-name-mobile')
+            preSelected = document.querySelectorAll('.mini-logo')[currentIndex].parentNode.parentNode
             newSelected = element.parentNode.parentNode
             if (i % 5 === 0 && i !== 0 && i !== document.querySelectorAll('.mini-logo').length - 1 ||
                 (i === document.querySelectorAll('.mini-logo').length - 6 && currentRow === parseInt((document.querySelectorAll('.mini-logo').length - 1) / 5 + 1))) {
@@ -165,8 +185,7 @@ document.querySelectorAll('.mini-logo').forEach(
                 }, 300)
             }
 
-            if (i - currentIndex > 2) {
-                currentIndex = i
+            if (i > currentIndex + 1) {
                 root.style.setProperty('--offset', '-' + getDistance(newSelected, preSelected) + "px");
                 newSelected.classList.add('to-left')
                 preSelected.classList.add('no-transition')
@@ -175,13 +194,44 @@ document.querySelectorAll('.mini-logo').forEach(
                     preSelected.classList.remove('no-transition')
                     newSelected.classList.remove('to-left')
                     newSelected.classList.add('is-Selected')
-                }, 10)
+                }, 15)
+            } else if (i < currentIndex - 1) {
+                root.style.setProperty('--offset', + getDistance(newSelected, preSelected) + "px");
+                newSelected.classList.add('to-left')
+                preSelected.classList.add('no-transition')
+                preSelected.classList.remove('is-Selected')
+                setTimeout(() => {
+                    preSelected.classList.remove('no-transition')
+                    newSelected.classList.remove('to-left')
+                    newSelected.classList.add('is-Selected')
+                }, 15)
             } else {
-                currentIndex = i
                 preSelected.classList.remove('is-Selected')
                 newSelected.classList.add('is-Selected')
             }
-            document.querySelectorAll('.event-video.is-showed')[0].src=document.querySelectorAll('.event-video.is-showed')[0].src
+            currentIndex = i
+            // document.querySelectorAll('.event-video.is-showed')[0].src = document.querySelectorAll('.event-video.is-showed')[0].src
+            document.querySelectorAll('.event-video.is-showed')[0].classList.remove('is-showed')
+            document.querySelectorAll('.event-video')[i].classList.add('is-showed')
+        })
+    }
+)
+document.querySelectorAll('.event-name-mobile').forEach(
+    (element, i) => {
+        element.addEventListener('click', (e) => {
+            animateLogos(i)
+            document.querySelector('.selected-event-name-mobile').classList.remove('bold', 'selected-event-name-mobile')
+            element.classList.add('bold', 'selected-event-name-mobile')
+            preSelected = document.querySelectorAll('.is-Selected')[0]
+            newSelected = document.querySelectorAll('.mini-logo')[i].parentNode.parentNode
+            if (i % 5 === 0 && i !== 0 && i !== document.querySelectorAll('.mini-logo').length - 1 ||
+                (i === document.querySelectorAll('.mini-logo').length - 6 && currentRow === parseInt((document.querySelectorAll('.mini-logo').length - 1) / 5 + 1))) {
+                scroll_to_left = i / 5 === currentRow ? true : false
+                currentRow = i / 5 === currentRow ? currentRow + 1 : currentRow - 1
+            }
+            currentIndex = i
+            preSelected.classList.remove('is-Selected')
+            newSelected.classList.add('is-Selected')
             document.querySelectorAll('.event-video.is-showed')[0].classList.remove('is-showed')
             document.querySelectorAll('.event-video')[i].classList.add('is-showed')
         })

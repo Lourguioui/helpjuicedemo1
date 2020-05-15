@@ -1,7 +1,10 @@
 :root {
     --offset: 0px
 }
-
+#events{
+    margin-top: 30px;
+    margin-bottom: 100%;
+}
 .events-p {
     text-align: justify;
     text-align-last: center;
@@ -73,39 +76,44 @@
 .big-logo-circle>.big-logo {
     position: absolute;
     height: 70%;
-    transition: .3s all ease-in;
-    -webkit-transition: .3s all ease-in;
-    -moz-transition: .3s all ease-in;
-    -ms-transition: .3s all ease-in;
-    -o-transition: .3s all ease-in;
+    max-width: 80%;
+    top: 15%;
+    left: 50%;
+    transition: .3s all linear;
+    -webkit-transition: .3s all linear;
+    -moz-transition: .3s all linear;
+    -ms-transition: .3s all linear;
+    -o-transition: .3s all linear;
 }
 
 .big-logo-circle>.lhd-logo {
+    top: 30%;
     height: 40%;
 }
 
 .in-middle {
-    transform: translateX(0) !important;
-    -webkit-transform: translateX(0) !important;
-    -moz-transform: translateX(0) !important;
-    -ms-transform: translateX(0) !important;
-    -o-transform: translateX(0) !important;
+    transform: translateX(-50%) !important;
+    -webkit-transform: translateX(-50%) !important;
+    -moz-transform: translateX(-50%) !important;
+    -ms-transform: translateX(-50%) !important;
+    -o-transform: translateX(-50%) !important;
 }
 
 .in-left {
-    transform: translateX(-35vw) !important;
-    -webkit-transform: translateX(-35vw) !important;
-    -moz-transform: translateX(-35vw) !important;
-    -ms-transform: translateX(-35vw) !important;
-    -o-transform: translateX(-35vw) !important;
+    transition-duration: .4s !important;
+    transform: translateX(-45vw) !important;
+    -webkit-transform: translateX(-45vw) !important;
+    -moz-transform: translateX(-45vw) !important;
+    -ms-transform: translateX(-45vw) !important;
+    -o-transform: translateX(-45vw) !important;
 }
 
 .in-right {
-    transform: translateX(35vw) !important;
-    -webkit-transform: translateX(35vw) !important;
-    -moz-transform: translateX(35vw) !important;
-    -ms-transform: translateX(35vw) !important;
-    -o-transform: translateX(35vw) !important;
+    transform: translateX(18vw) !important;
+    -webkit-transform: translateX(18vw) !important;
+    -moz-transform: translateX(18vw) !important;
+    -ms-transform: translateX(18vw) !important;
+    -o-transform: translateX(18vw) !important;
 }
 
 .left-side-container {
@@ -168,6 +176,8 @@
 
 .event-item>.event-item-top>span:nth-child(1) {
     position: absolute;
+    top: 0;
+    left: 0;
     height: 100%;
     width: 100%;
     border-radius: 50%;
@@ -182,6 +192,8 @@
 
 .event-item>.event-item-top>span:nth-child(2) {
     position: absolute;
+    top: 5%;
+    left: 5%;
     height: 90%;
     width: 90%;
     border: 1px dashed #02A5DC;
@@ -245,6 +257,8 @@
 
 .event-item>.event-item-bottom>span:nth-child(2) {
     position: absolute;
+    top: 0;
+    left: 0;
     height: 30px;
     width: 30px;
     border: 2px solid #02A5DC;
@@ -350,6 +364,8 @@
 
 .event-video {
     position: absolute;
+    top: 5%;
+    left: 7.5%;
     opacity: 0;
     z-index: 1;
     height: 90%;
@@ -366,7 +382,7 @@
     z-index: 2;
 }
 
-.to-left.event-item * {
+.to-left.event-item *, .to-right.event-item {
     transition: none !important;
     -webkit-transition: none !important;
     -moz-transition: none !important;
@@ -375,6 +391,15 @@
 }
 
 .to-left>.event-item-top>span:nth-child(1), .to-left>.event-item-top>span:nth-child(2), .to-left>.event-item-bottom>span:nth-child(1), .to-left>.event-item-bottom>span:nth-child(2) {
+    opacity: 1;
+    transform: translateX(var(--offset));
+    -webkit-transform: translateX(var(--offset));
+    -moz-transform: translateX(var(--offset));
+    -ms-transform: translateX(var(--offset));
+    -o-transform: translateX(var(--offset));
+}
+
+.to-right>.event-item-top>span:nth-child(1), .to-right>.event-item-top>span:nth-child(2), .to-right>.event-item-bottom>span:nth-child(1), .to-right>.event-item-bottom>span:nth-child(2) {
     opacity: 1;
     transform: translateX(var(--offset));
     -webkit-transform: translateX(var(--offset));
@@ -427,6 +452,9 @@
 }
 
 @media (max-width:767px) {
+    #events{
+        margin-bottom: 100px;
+    }
     .big-logo-circle {
         position: relative;
         top: 50%;
@@ -439,18 +467,59 @@
         -ms-transform: translate(-50%, -50%);
         -o-transform: translate(-50%, -50%);
     }
-    .in-left{
-        transform: translateX(-80vw) !important;
-        -webkit-transform: translateX(-80vw) !important;
-        -moz-transform: translateX(-80vw) !important;
-        -ms-transform: translateX(-80vw) !important;
-        -o-transform: translateX(-80vw) !important;
+    .in-left {
+        transform: translateX(-110vw) !important;
+        -webkit-transform: translateX(-110vw) !important;
+        -moz-transform: translateX(-110vw) !important;
+        -ms-transform: translateX(-110vw) !important;
+        -o-transform: translateX(-110vw) !important;
 }
-    .in-right{
-        transform: translateX(80vw) !important;
-        -webkit-transform: translateX(80vw) !important;
-        -moz-transform: translateX(80vw) !important;
-        -ms-transform: translateX(80vw) !important;
-        -o-transform: translateX(80vw) !important;
+    .in-right {
+        transform: translateX(40vw) !important;
+        -webkit-transform: translateX(40vw) !important;
+        -moz-transform: translateX(40vw) !important;
+        -ms-transform: translateX(40vw) !important;
+        -o-transform: translateX(40vw) !important;
 }
+    .events-names-list-container {
+        width: 100%;
+        overflow: hidden;
+        margin: 40px 0;
+        padding: 0;
+    }
+    .events-names-list {
+        height: 70px;
+        width: 100%;
+        min-width: 100%;
+        white-space: nowrap;
+        border-top: 1px white solid;
+        border-bottom: 1px white solid;
+        display: flex;
+        align-items: center;
+        padding: 0;
+        overflow-x: scroll;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    .events-names-list::-webkit-scrollbar {
+        display: none;
+    }
+    .events-names-list>.event-name-mobile {
+        font-size: .9rem !important;
+        color: #E8EFF7 !important;
+        padding: 0 30px;
+        height: fit-content;
+        margin: 0 !important;
+        opacity: .8;
+        cursor: pointer;
+        transition: .3s all linear;
+        -webkit-transition: .3s all linear;
+        -moz-transition: .3s all linear;
+        -ms-transition: .3s all linear;
+        -o-transition: .3s all linear;
+        text-align: center;
+    }
+    .events-names-list>.selected-event-name-mobile {
+        opacity: 1;
+    }
 }
