@@ -50,6 +50,8 @@
                 <div class="big-logo-circle">
                 </div>
             </div>
+            <div class="col-12 d-flex d-md-none events-titles-list">
+            </div>
         </div>
     </div>
 </section>

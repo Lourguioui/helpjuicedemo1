@@ -11,6 +11,8 @@ var indexesInRight = []
 var events = [
     {
         name: 'Hack !T',
+        title: 'CSE Hack !T',
+        year: '2019',
         mini_logo_className: 'hackit-mini-logo',
         mini_logo: 'img/logo.svg',
         logo: './img/Groupe 37629.png',
@@ -20,6 +22,8 @@ var events = [
     },
     {
         name: 'Leapfrog',
+        title: 'CSE LeapFrog',
+        year: '2019',
         mini_logo_className: 'leapfrog-mini-logo',
         mini_logo: './img/Groupe 10158.svg',
         logo: './img/Groupe 37630.png',
@@ -29,6 +33,8 @@ var events = [
     },
     {
         name: 'ConfsDay',
+        title: 'CSE Confs Day',
+        year: '2019',
         mini_logo_className: 'confsday-mini-logo',
         mini_logo: './img/Groupe 10161.svg',
         logo: './img/Groupe 10161.svg',
@@ -38,6 +44,8 @@ var events = [
     },
     {
         name: 'Local Hack Day',
+        title: 'Local Hack Day Algiers',
+        year: '2019',
         mini_logo_className: 'lhd-mini-logo',
         mini_logo: 'img/Groupe 37547.svg',
         logo: './img/Asset 2.png',
@@ -47,6 +55,8 @@ var events = [
     },
     {
         name: 'Casbahtech <br/> Hackathon',
+        title: 'Casbahtech Hackathon',
+        year: '2019',
         mini_logo_className: 'casbahtech-mini-logo',
         mini_logo: './img/Groupe 10164.svg',
         logo: './img/Groupe 37631.png',
@@ -56,6 +66,8 @@ var events = [
     },
     {
         name: 'Smart Mobility <br/> Challenge',
+        title: 'Smart Mobility Challenge',
+        year: '2019',
         mini_logo_className: 'smc-mini-logo',
         mini_logo: 'img/Rectangle 55.png',
         logo: 'img/Rectangle 55.png',
@@ -64,34 +76,71 @@ var events = [
         video: "https://www.youtube.com/embed/OfvA7UXEPJE"
     },
 ]
+
 events.map((element, i) => {
     var left_side_container = document.querySelector('.left-side-container')
     var big_logo_circle = document.querySelector('.big-logo-circle')
     var videos_container = document.querySelector('.videos-container')
     var names_list = document.querySelector('.events-names-list')
-    var actual_name = document.createElement('p')
-    var current_img = document.createElement('div')
-    var current_video = document.createElement('div')
+    var titles_list = document.querySelector('.events-titles-list')
+
     if (i === 1) {
         is_selected = ''
     }
-    if (i === 0) {
-        current_img.innerHTML = '<img class="big-logo in-middle ' + element.logo_className + '" src="' + element.logo + '" alt="' + element.alt + '"/>'
-        big_logo_circle.appendChild(current_img.firstElementChild)
-        current_video.innerHTML = '<iframe class="event-video is-showed" src=' + element.video + ' frameborder="0"></iframe>'
-        videos_container.firstElementChild.appendChild(current_video.firstElementChild)
-        actual_name.classList.add('event-name-mobile', 'selected-event-name-mobile', 'bold')
-    } else {
-        current_img.innerHTML = '<img class="big-logo in-left ' + element.logo_className + '" src="' + element.logo + '" alt="' + element.alt + '"/>'
-        big_logo_circle.appendChild(current_img.firstElementChild)
-        current_video.innerHTML = '<iframe class="event-video" src="' + element.video + '"frameborder="0"></iframe>'
-        videos_container.firstElementChild.appendChild(current_video.firstElementChild)
-        actual_name.classList.add('event-name-mobile')
-    }
-    actual_name.innerHTML = element.name
-    names_list.appendChild(actual_name)
-    left_side_container.appendChild(createEventItem(element,is_selected))
+    titles_list.appendChild(creatEventTitle(element,i))
+    videos_container.firstElementChild.appendChild(createVideoItem(element,i))
+    names_list.appendChild(createEventName(element,i))
+    big_logo_circle.appendChild(createLogoItem(element, i))
+    left_side_container.appendChild(createEventItem(element, is_selected))
 })
+
+function createLogoItem(element, i) {
+    var current_img = document.createElement('div')
+    if (i === 0) {
+        current_img.classList.add('big-logo', 'in-middle')
+    } else {
+        current_img.classList.add('big-logo', 'in-left')
+    }
+    current_img.innerHTML = '<img class="' + element.logo_className + '" src="' + element.logo + '" alt="' + element.alt + '"/>'
+    return current_img
+}
+
+function createVideoItem(element, i) {
+    var current_video = document.createElement('div')
+    if (i === 0) {
+        current_video.innerHTML = '<iframe class="event-video is-showed" src=' + element.video + ' frameborder="0"></iframe>'
+    } else {
+        current_video.innerHTML = '<iframe class="event-video" src="' + element.video + '"frameborder="0"></iframe>'
+    }
+    return current_video.firstElementChild
+}
+
+function createEventName(element, i) {
+    var actual_name = document.createElement('p')
+    actual_name.classList.add('event-name-mobile')
+    if (i === 0) {
+        actual_name.classList.add('selected-event-name-mobile', 'bold')
+    } 
+    actual_name.innerHTML = element.name
+    return actual_name
+}
+
+function creatEventTitle(element, i) {
+    var actual_title = document.createElement('div')
+    var title=document.createElement('p')
+    var year=document.createElement('p')
+
+    actual_title.classList.add('event-full-title')
+    title.classList.add('bold')
+    if (i === 0) {
+        actual_title.classList.add('is-showed')
+    }
+    title.innerHTML=element.title
+    year.innerHTML=element.year
+    actual_title.appendChild(title)
+    actual_title.appendChild(year)
+    return actual_title
+}
 
 function createEventItem(element, is_selected) {
     var event_item = document.createElement('div')
@@ -110,6 +159,7 @@ function createEventItem(element, is_selected) {
         "</div>"
     return event_item.firstElementChild
 }
+
 window.addEventListener('resize', () => {
     if (document.querySelectorAll('.mini-logo').length > 6) {
         setTimeout(() => {
@@ -121,7 +171,6 @@ window.addEventListener('resize', () => {
         }, 1)
     }
 })
-
 
 function getDistance(e1, e2) {
     var x1 = e1.getBoundingClientRect().left
@@ -213,9 +262,12 @@ document.querySelectorAll('.mini-logo').forEach(
             // document.querySelectorAll('.event-video.is-showed')[0].src = document.querySelectorAll('.event-video.is-showed')[0].src
             document.querySelectorAll('.event-video.is-showed')[0].classList.remove('is-showed')
             document.querySelectorAll('.event-video')[i].classList.add('is-showed')
+            document.querySelectorAll('.event-full-title.is-showed')[0].classList.remove('is-showed')
+            document.querySelectorAll('.event-full-title')[i].classList.add('is-showed')
         })
     }
 )
+
 document.querySelectorAll('.event-name-mobile').forEach(
     (element, i) => {
         element.addEventListener('click', (e) => {
@@ -234,6 +286,8 @@ document.querySelectorAll('.event-name-mobile').forEach(
             newSelected.classList.add('is-Selected')
             document.querySelectorAll('.event-video.is-showed')[0].classList.remove('is-showed')
             document.querySelectorAll('.event-video')[i].classList.add('is-showed')
+            document.querySelectorAll('.event-full-title.is-showed')[0].classList.remove('is-showed')
+            document.querySelectorAll('.event-full-title')[i].classList.add('is-showed')
         })
     }
 )
