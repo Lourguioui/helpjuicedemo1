@@ -159,13 +159,13 @@ footer {
   border-bottom-right-radius: 10%;
 }
 
+/* Arrow animation */
 .bounceRight {
   -moz-animation: bounceRight 2s infinite;
   -webkit-animation: bounceRight 2s infinite;
   animation: bounceRight 2s infinite;
 }
 
-/* right bounce */
 @-webkit-keyframes bounceRight {
   0%,
   20%,
@@ -217,4 +217,3 @@ footer {
     transform: translateX(-10px);
   }
 }
-/* /right bounce */
