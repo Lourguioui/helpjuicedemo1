@@ -14,7 +14,7 @@
                             <input type="text" class="form-control" aria-label="Default" style="border-style: hidden;"
                             aria-describedby="inputGroup-sizing-default" placeholder="Enter your Email">
                             <div class="input-group-prepend">
-                                <span class="input-group-text" id="point-to"><img src="{{asset('img/point-to.svg')}}"></span>
+                                <span class="input-group-text" id="point-to"><img class="bounceRight" src="{{asset('img/point-to.svg')}}"></span>
                             </div>
                         </div>                          
                     </div>
