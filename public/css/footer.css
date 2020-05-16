@@ -135,10 +135,18 @@ footer {
 /* Newsletter input */
 #email {
   margin: auto;
-  width: 280px;
-  border-radius: 10px;
+  width: 310px;
+  border-radius: 5px;
   font-family: GilroyLight;
+  border-left: 5px solid #535773;
 }
+
+#email input.form-control {
+  height : 45px !important;
+  }
+/*input {
+  height: 45px !important;
+}*/
 
 #inputGroup-sizing-default {
   background-color: #fff;
