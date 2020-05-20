@@ -87,9 +87,9 @@ events.map((element, i) => {
     if (i === 1) {
         is_selected = ''
     }
-    titles_list.appendChild(creatEventTitle(element,i))
-    videos_container.firstElementChild.appendChild(createVideoItem(element,i))
-    names_list.appendChild(createEventName(element,i))
+    titles_list.appendChild(creatEventTitle(element, i))
+    videos_container.firstElementChild.appendChild(createVideoItem(element, i))
+    names_list.appendChild(createEventName(element, i))
     big_logo_circle.appendChild(createLogoItem(element, i))
     left_side_container.appendChild(createEventItem(element, is_selected))
 })
@@ -120,23 +120,23 @@ function createEventName(element, i) {
     actual_name.classList.add('event-name-mobile')
     if (i === 0) {
         actual_name.classList.add('selected-event-name-mobile', 'bold')
-    } 
+    }
     actual_name.innerHTML = element.name
     return actual_name
 }
 
 function creatEventTitle(element, i) {
     var actual_title = document.createElement('div')
-    var title=document.createElement('p')
-    var year=document.createElement('p')
+    var title = document.createElement('p')
+    var year = document.createElement('p')
 
     actual_title.classList.add('event-full-title')
     title.classList.add('bold')
     if (i === 0) {
         actual_title.classList.add('is-showed')
     }
-    title.innerHTML=element.title
-    year.innerHTML=element.year
+    title.innerHTML = element.title
+    year.innerHTML = element.year
     actual_title.appendChild(title)
     actual_title.appendChild(year)
     return actual_title
@@ -180,35 +180,45 @@ function getDistance(e1, e2) {
 
 function setPointerEvents(className, state) {
     document.querySelectorAll(className).forEach(element => {
-        element.setAttribute('pointer-events', state)
+        if (state==='none') {
+            element.classList.add('none-pointer')
+        } else {
+            element.classList.remove('none-pointer')
+        }
     })
 }
 
 function animateLogos(j) {
     if (j !== currentIndex) {
+        var big_logos = document.querySelectorAll('.big-logo')
         setPointerEvents('.mini-logo', 'none')
-        if (!indexesInRight.includes(j)) {
-            document.querySelectorAll('.big-logo')[currentIndex].classList.replace('in-middle', 'in-right')
-            indexesInRight.unshift(currentIndex)
-            document.querySelectorAll('.big-logo')[j].classList.replace('in-left', 'in-middle')
+        setPointerEvents('.event-name-mobile', 'none')
+        big_logos[j].addEventListener('transitionend', () => {
             setPointerEvents('.mini-logo', 'all')
+            setPointerEvents('.event-name-mobile', 'all')
+            big_logos[j].removeEventListener('transitionend', e => { })
+        })
+        // if (!indexesInRight.includes(j) || true ) {
+        if (big_logos[j].classList.contains('in-left')) {
+            big_logos[currentIndex].classList.add('in-right')
+            indexesInRight.unshift(currentIndex)
+            big_logos[j].classList.remove('in-left')
         } else {
-            document.querySelectorAll('.big-logo')[currentIndex].classList.replace('in-middle', 'in-left')
-            for (let i = 0; i < indexesInRight.indexOf(j) + 1; i++) {
-                const element = indexesInRight[i];
-                setTimeout(() => {
-                    if (j === element) {
-                        document.querySelectorAll('.big-logo')[element].classList.replace('in-right', 'in-middle')
-                        indexesInRight.shift()
-                        setTimeout(() => {
-                            setPointerEvents('.mini-logo', 'all')
-                        }, 300)
-                    } else {
-                        document.querySelectorAll('.big-logo')[element].classList.replace('in-right', 'in-left')
-                        indexesInRight.shift()
-                    }
-                }, 150 * (i + 1))
-            }
+            big_logos[currentIndex].classList.add('in-left')
+            big_logos[j].classList.remove('in-right')
+            // big_logos[currentIndex].classList.add('in-left')
+            // for (let i = 0; i < indexesInRight.indexOf(j) + 1; i++) {
+            //     const element = indexesInRight[i];
+            //     setTimeout(() => {
+            //         if (j === element) {
+            //             big_logos[element].classList.remove('in-right')
+            //             indexesInRight.shift()
+            //         } else {
+            //             big_logos[element].classList.replace('in-right', 'in-left')
+            //             indexesInRight.shift()
+            //         }
+            //     }, 150 * (i + 1))
+            // }
         }
     }
 }

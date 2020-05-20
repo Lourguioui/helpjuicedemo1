@@ -35,8 +35,8 @@
                         <p class="footer_made">Made with ❤️ by <img src="{{asset('img/cse-footer.png')}}"></p>
                     </div>
                 </div>
-                <div class="row mb-4 links text-left">
-                    <div class="col-lg-4 mt-3">
+                <div class="row p-2 p-md-0 mb-4 links text-left">
+                    <div class="col-6 col-lg-4 mt-3">
                         <h3 class="bold">About CSE</h3>
                         <a href="http://" target="_blank">
                             <p>About</p>
@@ -48,7 +48,7 @@
                             <p>Projects</p>
                         </a>
                     </div>
-                    <div class="col-lg-4 mt-3">
+                    <div class="col-6 col-lg-4 mt-3">
                         <h3 class="bold">CSE Events</h3>
                         <a href="http://" target="_blank">
                             <p>HackIT</p>
@@ -57,7 +57,7 @@
                             <p>CasbahTech hackathon</p>
                         </a>
                     </div>
-                    <div class="col-lg-4 mt-3">
+                    <div class="col-6 col-lg-4 mt-3">
                         <div class="row">
                             <div class="col-lg-12">
                                 <h3 class="bold">Resources</h3>
