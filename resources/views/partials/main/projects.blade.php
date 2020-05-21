@@ -1,27 +1,27 @@
 <section id="projects">
     <div class="container">
-        <div class="row pt-5 align-items-center">
-            <div class="col-md-6">
-                <div class="row">
-                    <div class="col-12">
+        <div class="row pt-5 justify-content-center align-items-center">
+            <div class="col-10 col-md-6 mb-2 mb-md-0">
+                <div class="row justify-content-center justify-content-md-start">
+                    <div class="col-auto p-0">
                         <h3 class="title">
                             CSE'S Projects.
                         </h3>
                     </div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum odio quae voluptates dignissimos
+                        voluptatibus fuga vel, necessitatibus quidem? Sit, dicta.
+                    </p>
+                    <a href="{{route('projects')}}" target="_blank">
+                        <button class="mt-2">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            Check all !
+                        </button>
+                    </a>
                 </div>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum odio quae voluptates dignissimos
-                    voluptatibus fuga vel, necessitatibus quidem? Sit, dicta.
-                </p>
-                <a href="{{route('projects')}}" target="_blank">
-                    <button class="mt-2">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        Check all !
-                    </button>
-                </a>
             </div>
             <div class="col-md-6 ">
                 <div id="sliderIndicators" class="carousel slide" data-ride="carousel" data-interval='4000'>
