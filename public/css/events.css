@@ -89,16 +89,18 @@
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    transition: .3s all ease-in;
-    -webkit-transition: .3s all ease-in;
-    -moz-transition: .3s all ease-in;
-    -ms-transition: .3s all ease-in;
-    -o-transition: .3s all ease-in;
+    transition: .3s transform ease-in-out;
+    -webkit-transition: .3s transform ease-in-out;
+    -moz-transition: .3s transform ease-in-out;
+    -ms-transition: .3s transform ease-in-out;
+    -o-transition: .3s transform ease-in-out;
+    will-change: transform;
 }
 
 .big-logo-circle>.big-logo>img {
     height: 70%;
     max-width: 80%;
+    will-change: transform;
 }
 
 .big-logo-circle>.big-logo>.lhd-logo {
@@ -106,29 +108,23 @@
     height: 40%;
 }
 
-.in-middle {
-    transform: translateX(0) !important;
-    -webkit-transform: translateX(0) !important;
-    -moz-transform: translateX(0) !important;
-    -ms-transform: translateX(0) !important;
-    -o-transform: translateX(0) !important;
-}
-
 .in-left {
     transition-duration: .4s !important;
-    transform: translateX(-100%) !important;
-    -webkit-transform: translateX(-100%) !important;
-    -moz-transform: translateX(-100%) !important;
-    -ms-transform: translateX(-100%) !important;
-    -o-transform: translateX(-100%) !important;
+    transform: translateX(-100%) translateZ(0);
+    -webkit-transform: translateX(-100%) translateZ(0);
+    -moz-transform: translateX(-100%) translateZ(0);
+    -ms-transform: translateX(-100%) translateZ(0);
+    -o-transform: translateX(-100%) translateZ(0);
+    will-change: transform;
 }
 
 .in-right {
-    transform: translateX(100%) !important;
-    -webkit-transform: translateX(100%) !important;
-    -moz-transform: translateX(100%) !important;
-    -ms-transform: translateX(100%) !important;
-    -o-transform: translateX(100%) !important;
+    transform: translateX(100%) translateZ(0);
+    -webkit-transform: translateX(100%) translateZ(0);
+    -moz-transform: translateX(100%) translateZ(0);
+    -ms-transform: translateX(100%) translateZ(0);
+    -o-transform: translateX(100%) translateZ(0);
+    will-change: transform;
 }
 
 .left-side-container {
@@ -550,4 +546,7 @@
         opacity: .7;
         margin-top: -20px;
     }
+}
+.none-pointer{
+    pointer-events: none !important;
 }
