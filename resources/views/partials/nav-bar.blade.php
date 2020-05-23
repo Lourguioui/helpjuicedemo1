@@ -17,12 +17,12 @@
         </li>
         <li><a data-scroll href="#faq">FAQ</a></li>
         <li><a data-scroll href="#media">Media</a></li>
-        <li><a data-scroll href="#supportus">SupportUs</a></li>
+        <li><a data-scroll href="#support">SupportUs</a></li>
         <li><a data-scroll href="#projects">Projects</a></li>
         <li><a data-scroll href="#partners">Partners</a></li>
         <li><a data-scroll href="#vision">Vision</a></li>
         <li><a data-scroll href="#events">Events</a></li>
-        <li><a data-scroll href="#about">About</a></li>
+        <li><a data-scroll href="#aboutus">About</a></li>
         <li><a data-scroll href="#">Home</a></li>
     </ul>
     <div class="nav-menu">

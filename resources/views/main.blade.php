@@ -5,6 +5,7 @@
 @section('styles')
 
 <link rel="stylesheet" href="{{asset('css/hero.css')}}">
+<link rel="stylesheet" href="{{asset('css/about.css')}}">
 <link rel="stylesheet" href="{{ asset('css/events.css') }}">
 <link rel="stylesheet" href="{{asset('css/faq.css')}}">
 <link rel="stylesheet" href="{{asset('css/support.css')}}">
