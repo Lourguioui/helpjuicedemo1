@@ -25,5 +25,23 @@
         <li><a data-scroll href="#about">About</a></li>
         <li><a data-scroll href="#">Home</a></li>
     </ul>
-    <div class="btn btn-burger align-self-center"><i class="fas fa-bars fa-2x"></i></div>
+    <div class="nav-menu">
+        <div class='nav-menu_item'><a data-scroll href="#">Home</a></div>
+        <div class='nav-menu_item'><a data-scroll href="#about">About</a></div>
+        <div class='nav-menu_item'><a data-scroll href="#events">Events</a></div>
+        <div class='nav-menu_item'><a data-scroll href="#vision">Vision</a></div>
+        <div class='nav-menu_item'><a data-scroll href="#partners">Partners</a></div>
+        <div class='nav-menu_item'><a data-scroll href="#projects">Projects</a></div>
+        <div class='nav-menu_item'><a data-scroll href="#faq">FAQ</a></div>
+        <div class='nav-menu_item'><a data-scroll href="#media">Media</a></div>
+        <div class='nav-menu_item'><a data-scroll href="#supportus">SupportUs</a></div>
+        <div class='nav-menu_item'><a data-scroll href="#">CSE Vision</a></div>
+        <div class='nav-menu_item'><a data-scroll href="#">Become Partner</a></div>
+        <div class='nav-menu_item'><a data-scroll href="#">Members</a></div>
+        <div class='nav-menu_item'><a data-scroll href="#">Join CSE</a></div>
+    </div>
+    </div>
+    <div class="nav-btn">
+        <div class="btn-burger2"></div>
+    </div>
 </header>
