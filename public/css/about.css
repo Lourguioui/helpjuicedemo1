@@ -155,5 +155,33 @@ p{
    }
    #aboutustext2{
     display: block;
+    width: 90%;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -150px;
  }
+ .img2{
+    display: none; 
+
+  }
+  .img1{
+    
+      height: 210px;
+      border: 9px solid #fff;
+      margin: auto;
+      align-content: center;
+      width: 80%; 
+
+  }
+  #wall{
+    margin: auto;
+  }
+  .circle{
+    display: none;
+    
+  }
+ 
   }
