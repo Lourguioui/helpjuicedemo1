@@ -1,4 +1,5 @@
 /* Hero image */
+
 #hero {
   padding-top: 10%;
   background: rgb(96, 101, 128);
@@ -16,7 +17,9 @@
     
   }
 */
+
 /* Date */
+
 #date {
   text-align: center;
   margin-top: 5%;
@@ -25,6 +28,9 @@
 
 @bg: #2d2d37; // Dark blue
 @primary: #fd6b21; // Orange
+body {
+  background: @bg;
+}
 
 body {
   background: @bg;
@@ -40,6 +46,7 @@ a {
   margin: 8% 0;
   cursor: pointer;
 }
+
 .bounce {
   -moz-animation: bounce 2s infinite;
   -webkit-animation: bounce 2s infinite;
@@ -93,5 +100,11 @@ a {
     -ms-transform: translateY(-15px);
     -webkit-transform: translateY(-15px);
     transform: translateY(-15px);
+  }
+}
+
+@media (max-width:768px) {
+  #hero {
+    padding-top: 120px;
   }
 }
