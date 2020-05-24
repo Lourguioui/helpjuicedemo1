@@ -169,7 +169,41 @@ p{
   }
   .img1{
     
-      height: 190px;
+      height: 240px;
+      border: 6px solid #fff;
+      margin: auto;
+      align-content: center;
+      width: 72%; 
+
+  }
+  #wall{
+    margin: auto;
+  }
+  .circle{
+    display: none;
+    
+  }
+  @media only screen and (max-width: 450px) {
+    #aboutustext{
+      display: none;
+   }
+   #aboutustext2{
+    display: block;
+    width: 90%;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -150px;
+ }
+ .img2{
+    display: none; 
+
+  }
+  .img1{
+    
+      height: 180px;
       border: 6px solid #fff;
       margin: auto;
       align-content: center;
