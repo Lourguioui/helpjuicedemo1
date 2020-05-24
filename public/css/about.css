@@ -4,15 +4,12 @@
  align-items: center;
  align-content: center;
  align-self: center;
-
+  /*display: none;*/
 }
 p{
   line-height: 2;
 }
-#separator{
-  background-color: yellow;
-  padding-left: 20px;
-}
+
 .img1{
      /* float: right;*/
       width:  405px;
@@ -38,9 +35,12 @@ p{
     animation: fade2 25s infinite 2.5s;
     /*animation: boxmove2 5s infinite;*/
   }
- /* #aboutustext{
-    margin-left: 20px;
- }*/
+  #images2{
+    display: none;
+  }
+  #aboutustext2{
+    display: none;
+ }
   .non-specified{
     width: 100%;
 
@@ -148,4 +148,74 @@ p{
     100%{
       margin-top : -220px;
     }
+  }
+  @media only screen and (max-width: 990px) {
+    #aboutustext{
+      display: none;
+   }
+   #aboutustext2{
+    display: block;
+    width: 90%;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -150px;
+ }
+ .img2{
+    display: none; 
+
+  }
+  .img1{
+    
+      height: 240px;
+      border: 6px solid #fff;
+      margin: auto;
+      align-content: center;
+      width: 72%; 
+
+  }
+  #wall{
+    margin: auto;
+  }
+  .circle{
+    display: none;
+    
+  }
+  @media only screen and (max-width: 450px) {
+    #aboutustext{
+      display: none;
+   }
+   #aboutustext2{
+    display: block;
+    width: 90%;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -150px;
+ }
+ .img2{
+    display: none; 
+
+  }
+  .img1{
+    
+      height: 180px;
+      border: 6px solid #fff;
+      margin: auto;
+      align-content: center;
+      width: 75%; 
+
+  }
+  #wall{
+    margin: auto;
+  }
+  .circle{
+    display: none;
+    
+  }
+ 
   }
