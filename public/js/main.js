@@ -7,9 +7,3 @@ var header = document.querySelector("header");
     height = 2 * hero.offsetHeight / 3;
     headerBg.style.opacity = window.scrollY / height ;
 });
-
-//Smooth scrolling fucntion
-var scroll = new SmoothScroll('a[href*="#"]', {
-    speed: 800,
-    speedAsDuration: true
-});
