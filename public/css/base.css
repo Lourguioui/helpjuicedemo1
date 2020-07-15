@@ -36,7 +36,10 @@ body {
   font-size: 3rem;
 }
 
-
+.secondary-title {
+  font-family: "GilroyExtraBold";
+  font-size: 1.5rem;
+}
 
 p {
   font-family: "GilroyLight";

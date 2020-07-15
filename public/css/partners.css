@@ -1,0 +1,16 @@
+.bxslider ul {
+  list-style: none;
+}
+
+.bxslider li {
+  padding: 100px;
+  background-image: url("../img/partner.png");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+
+.bxslider img {
+  width: 150px;
+  margin: auto;
+}

@@ -10,6 +10,7 @@
 <link rel="stylesheet" href="{{asset('css/faq.css')}}">
 <link rel="stylesheet" href="{{asset('css/support.css')}}">
 <link rel="stylesheet" href="{{asset('css/projects.css')}}">
+<link rel="stylesheet" href="{{asset('css/partners.css')}}">
 
 @endsection
 
@@ -43,7 +44,9 @@
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbkAc5WgnIYDkqCPo0c5beRSFjtDcOsOM &callback=initMap">
 </script>
 <script src="{{asset('js/init.js')}}"></script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 <script src="{{asset('js/up.js')}}"></script>
+<script src="{{asset('js/slider.js')}}"></script>
 <script src="{{asset('js/hero.js')}}"></script>
 <script src="{{asset('js/main.js')}}"></script>
 @endsection
