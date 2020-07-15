@@ -8,12 +8,6 @@ var header = document.querySelector("header");
     headerBg.style.opacity = window.scrollY / height ;
 });
 
-//Smooth scrolling fucntion
-var scroll = new SmoothScroll('a[href*="#"]', {
-    speed: 800,
-    speedAsDuration: true
-});
-
 var navBtn= document.querySelector('.nav-btn')
 var burger= document.querySelector('.btn-burger2')
 var menu=document.querySelector('.nav-menu')
