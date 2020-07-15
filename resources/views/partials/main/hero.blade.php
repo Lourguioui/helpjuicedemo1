@@ -1,6 +1,6 @@
 <div class="hero-image" id="hero">
     <div class="container">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center align-items-center">
             <div class="col-lg-6 col-sm-12">
                 <h1 class="title"> Club Scientifique de l'ESI </h1>
                 <p>
