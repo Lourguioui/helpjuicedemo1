@@ -1,4 +1,6 @@
 #aboutus{
+  background: rgb(42,52,107);
+  background: linear-gradient(180deg, rgba(42,52,107,1) 0%, #383D59 100%);
  align-items: center;
  justify-content: center;
  align-items: center;
@@ -63,7 +65,7 @@ p{
     position: absolute;
     right: 20px;
     margin-right: 20px;
-    animation: ballmove .9s ease-in-out infinite;
+    animation: ballmove .8s ease-in-out infinite;
     transform: translateX(50%) rotateX(0deg) scale(1);
     z-index: 2;
     
