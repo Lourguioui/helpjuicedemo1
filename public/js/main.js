@@ -9,14 +9,14 @@ $(function () {
     var top1 = $('#hero').offset().top;
     var top2 = $('#events').offset().top;
 
-    var color = '#2a346b';
+    var color = '#304185';
     $(document).on("scroll", function () {
         var scrollPos = $(document).scrollTop();
 
         if (scrollPos >= top1 && scrollPos < top2) {
-            color = '#2a346b';
+            color = '#304185';
         } else if (scrollPos >= top2) {
-            color = '#383D59'
+            color = '#304185'
         } else {
 
         }
