@@ -93,8 +93,8 @@
                 </div>
                 <div class="row">
                     <div class="col-12">
-                        <p class="copyright">Copyright © 2019 Club Scientifique de l'ESI. All
-                            Rights Reserved. | Privacy Policy</p>
+                        <p class="copyright">Copyright © <script>document.write(new Date().getFullYear())</script> Club Scientifique de l'ESI. All
+                            Rights Reserved.</p>
                     </div>
                 </div>
             </div>
