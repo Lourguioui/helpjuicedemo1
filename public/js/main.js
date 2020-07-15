@@ -27,6 +27,8 @@ $(function () {
 });
 
 
+document.getElementById('hero-video').play();
+
 var navBtn = document.querySelector('.nav-btn')
 var burger = document.querySelector('.btn-burger2')
 var menu = document.querySelector('.nav-menu')
