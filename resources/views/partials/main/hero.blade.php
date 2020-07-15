@@ -17,9 +17,9 @@
                         JOIN US
                     </button>
                 </a>
-                <p id="date">
+                {{-- <p id="date">
                     <span id="spanDate"></span>
-                </p>
+                </p> --}}
                 <div class="arrow bounce">
                     <a href="#aboutus"><i class="fas fa-angle-double-down fa-2x"></i></a>
                 </div>
