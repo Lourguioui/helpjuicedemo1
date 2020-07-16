@@ -17,10 +17,10 @@ header img {
 }
 
 .header-bg {
-    /* background-image: linear-gradient(to right, rgba(96, 101, 128, 1) 0%, rgba(59, 63, 92, 1) 100%);
+    background-image: linear-gradient(to right, rgba(96, 101, 128, 1) 0%, rgba(59, 63, 92, 1) 100%);
     background-image: -moz-linear-gradient(to right, rgba(96, 101, 128, 1) 0%, rgba(59, 63, 92, 1) 100%);
     background-image: -webkit-linear-gradient(to right, rgba(96, 101, 128, 1) 0%, rgba(59, 63, 92, 1) 100%);
-    background-image: -o-linear-gradient(to right, rgba(96, 101, 128, 1) 0%, rgba(59, 63, 92, 1) 100%); */
+    background-image: -o-linear-gradient(to right, rgba(96, 101, 128, 1) 0%, rgba(59, 63, 92, 1) 100%);
     /*background-color: rgba(0,0,0,0.0);
     background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(96,101,128,0.00)),color-stop( 100% , rgba(56,61,89,0.00)));
     background-image: -webkit-linear-gradient(270deg,rgba(96,101,128,0.00) 0%,rgba(56,61,89,0.00) 100%);

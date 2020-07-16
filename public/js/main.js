@@ -9,18 +9,18 @@ $(function () {
     var top1 = $('#hero').offset().top;
     var top2 = $('#events').offset().top;
 
-    var color = '#304185';
+    var color = '#383D59';
     $(document).on("scroll", function () {
         var scrollPos = $(document).scrollTop();
 
         if (scrollPos >= top1 && scrollPos < top2) {
-            color = '#304185';
+            // color = '#304185';
         } else if (scrollPos >= top2) {
-            color = '#304185'
+            // color = '#304185'
         } else {
 
         }
-        headerBg.style.backgroundColor = color;
+        // headerBg.style.backgroundColor = color;
         height = 2 * hero.offsetHeight / 3;
         headerBg.style.opacity = window.scrollY / height;
     });

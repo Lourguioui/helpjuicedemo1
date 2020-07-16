@@ -1,6 +1,6 @@
 #aboutus{
-  background: #304185;
-  /* background: linear-gradient(180deg, #2a346b 0%, #383D59 100%); */
+  /* background: #304185; */
+  background: linear-gradient(180deg, #4C5377 0%, #383D59 100%);
  align-items: center;
  justify-content: center;
  align-items: center;
@@ -45,8 +45,8 @@ p{
  }
   .non-specified{
     width: 100%;
-
-    height: 250px;
+    filter: drop-shadow(2px 15px 15px black);
+    /* height: 250px;*/
     position: relative;
   }
   #non-specified{
