@@ -1,0 +1,16 @@
+.non-specified{
+  width: 160%;
+  height: 80%;
+}
+.bigwall{
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.ourvisiontext{
+  
+  justify-content: center;
+}
+#ourpara{
+  text-align: center;
+}
