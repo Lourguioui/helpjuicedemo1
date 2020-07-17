@@ -17,6 +17,18 @@
 
 <div class="row justify-content-center">
 
+</div>
+
+<div class="row justify-content-center">
+<a href="http://cse.club" target="_blank" >
+                    <button class="buttonour2">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Our Vision
+                    </button>
+                </a>
 <div class="col-lg-4" >
 <div >
 <!-- <img src="{{asset('img/Image 1.png')}}" class="ourphotos1"> -->
@@ -32,7 +44,7 @@ src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1">
 </div>
 <img src="{{asset('img/thing.svg')}}" id="thing" class="thing">
 </div>
-<div class="col-lg-1" >
+<div class="col-lg-1">
 </div>
 <div class="col-lg-4">
 <a href="http://cse.club" target="_blank" >

@@ -1,9 +1,3 @@
-
-.bigwall{
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-}
 .ourvisiontext{
   
   justify-content: center;
@@ -35,3 +29,30 @@
   right: 6.9%;
   margin-top: 15%;
 }
+.buttonour2{
+  display: none;
+}
+
+@media only screen and (max-width: 990px) {
+  .buttonour{
+    display: none;
+  }
+  .thing{
+    display: none;
+  }
+  .ourphotos2{display: none;}
+  .ourphotos1{display: none;}
+  .tempo{
+    display: none;
+  }
+  #ala{
+    display: none;
+  }
+  .non-specified{
+    display: none;
+  }
+  .buttonour2{
+    display: block;
+  }
+}
+
