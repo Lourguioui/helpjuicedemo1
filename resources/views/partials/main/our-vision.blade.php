@@ -1,16 +1,18 @@
 <section id="aboutus">
     <div class="container">
+    <div class="row justify-content-center">
+            <div class="col- title">
+                Our Vision.
+            </div>
+        </div>
+    <div class="row justify-content-center" >
 
-    <div class="row" class="ourvisiontext" >
-    <div class="col-lg-2"></div>
-    <div class="col-lg-8" class="ourvisiontext">
-        <h1 class="title">Our Vision</h1>
+    <div class="col-lg-8 justify-content-center">
         <p id="ourpara"> 
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
         </p>
         </div>
     
-    <div class="col-lg-8"></div>
 </div>
 
 <a href="http://cse.club" target="_blank">
