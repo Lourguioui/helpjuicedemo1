@@ -1,0 +1,58 @@
+.ourvisiontext{
+  
+  justify-content: center;
+}
+#ourpara{
+  text-align: center;
+}
+.thing{
+  width: 110%;
+  height: 110%;
+}
+.buttonour{
+  margin-top: 60px;
+  width: 70%;
+}
+.ourphotos1{
+  border-radius: 50px;
+  width: 24%;
+  height: 49%;
+  position: absolute;
+  left: 16.4%;
+  margin-top: 15%;
+}
+.ourphotos2{
+  border-radius: 50px;
+  width: 24%;
+  height: 49%;
+  position: absolute;
+  right: 6.9%;
+  margin-top: 15%;
+}
+.buttonour2{
+  display: none;
+}
+
+@media only screen and (max-width: 990px) {
+  .buttonour{
+    display: none;
+  }
+  .thing{
+    display: none;
+  }
+  .ourphotos2{display: none;}
+  .ourphotos1{display: none;}
+  .tempo{
+    display: none;
+  }
+  #ala{
+    display: none;
+  }
+  .non-specified{
+    display: none;
+  }
+  .buttonour2{
+    display: block;
+  }
+}
+
