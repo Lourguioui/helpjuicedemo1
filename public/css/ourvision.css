@@ -21,17 +21,17 @@
 }
 .ourphotos1{
   border-radius: 50px;
-  width: 90px;
-  height: 90px;
+  width: 24%;
+  height: 49%;
   position: absolute;
-  left: 62px;
-  margin-top: 57px;
+  left: 16.4%;
+  margin-top: 15%;
 }
 .ourphotos2{
   border-radius: 50px;
-  width: 90px;
-  height: 90px;
+  width: 24%;
+  height: 49%;
   position: absolute;
-  right: 27px;
-  margin-top: 57px;
+  right: 6.9%;
+  margin-top: 15%;
 }

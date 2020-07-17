@@ -19,10 +19,16 @@
 
 <div class="col-lg-4" >
 <div >
-<img src="{{asset('img/Image 1.png')}}" class="ourphotos1">
+<!-- <img src="{{asset('img/Image 1.png')}}" class="ourphotos1"> -->
+<iframe class="ourphotos1"
+src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1">
+</iframe>
 </div>
 <div  >
-<img src="{{asset('img/Image 1.png')}}" class="ourphotos2">
+<!-- <img src="{{asset('img/Image 1.png')}}" class="ourphotos2"> -->
+<iframe class="ourphotos2"
+src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1">
+</iframe>
 </div>
 <img src="{{asset('img/thing.svg')}}" id="thing" class="thing">
 </div>
