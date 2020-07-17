@@ -1,7 +1,4 @@
-.non-specified{
-  width: 160%;
-  height: 80%;
-}
+
 .bigwall{
   align-items: center;
   align-content: center;
@@ -13,4 +10,28 @@
 }
 #ourpara{
   text-align: center;
+}
+.thing{
+  width: 110%;
+  height: 110%;
+}
+.buttonour{
+  margin-top: 60px;
+  width: 70%;
+}
+.ourphotos1{
+  border-radius: 50px;
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  left: 62px;
+  margin-top: 57px;
+}
+.ourphotos2{
+  border-radius: 50px;
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  right: 27px;
+  margin-top: 57px;
 }
