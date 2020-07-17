@@ -1,4 +1,4 @@
-<section id="aboutus">
+<section id="ourvision">
     <div class="container">
     <div class="row justify-content-center">
             <div class="col- title">
@@ -32,15 +32,19 @@
 <div class="col-lg-4" >
 <div >
 <!-- <img src="{{asset('img/Image 1.png')}}" class="ourphotos1"> -->
-<iframe class="ourphotos1"
+<video id='hero-video' type="video/mp4" muted src="{{asset('videos/animation_v2.mp4')}}" autoplay loop playsinline
+                    aria-hidden="true" class="ourphotos1" ></video>
+<!-- <iframe class="ourphotos1"
 src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1">
-</iframe>
+</iframe> -->
 </div>
 <div  >
+<video id='hero-video' type="video/mp4" muted src="{{asset('videos/animation_v2.mp4')}}" autoplay loop playsinline
+                    aria-hidden="true" class="ourphotos2" ></video>
 <!-- <img src="{{asset('img/Image 1.png')}}" class="ourphotos2"> -->
-<iframe class="ourphotos2"
+<!-- <iframe class="ourphotos2"
 src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1">
-</iframe>
+</iframe> -->
 </div>
 <img src="{{asset('img/thing.svg')}}" id="thing" class="thing">
 </div>
