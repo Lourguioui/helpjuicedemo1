@@ -58,5 +58,16 @@
                 </ul>
             </div>
         </div>
+        <div class="row justify-content-center mt-4">
+            <a class="col-auto mt-4" href="/become-partner">
+                <button>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    BECOME PARTNER
+                </button>
+            </a>
+        </div>
     </div>
 </section>
