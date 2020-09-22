@@ -3,7 +3,7 @@
 
 {{-- Include Styles that are used only in this page in this section --}}
 @section('styles')
-
+<link rel="stylesheet" href="{{asset('css/become-partner/hero.css')}}">
 @endsection
 
 {{-- Each section of this page should be in a file, the file must be in this directory partials/{page-name}/ --}}
@@ -14,7 +14,7 @@
 
     @include('partials/nav-bar')
 
-
+    @include('partials/become-partner/become-partner-hero')
 
     @include('partials/footer')
 
