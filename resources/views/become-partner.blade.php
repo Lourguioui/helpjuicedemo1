@@ -4,6 +4,7 @@
 {{-- Include Styles that are used only in this page in this section --}}
 @section('styles')
 <link rel="stylesheet" href="{{asset('css/become-partner/hero.css')}}">
+<link rel="stylesheet" href="{{asset('css/become-partner/stats.css')}}">
 @endsection
 
 {{-- Each section of this page should be in a file, the file must be in this directory partials/{page-name}/ --}}
@@ -12,15 +13,24 @@
 
 @section('body')
 
-    @include('partials/nav-bar')
+    @include('partials/become-partner/nav-bar')
 
     @include('partials/become-partner/become-partner-hero')
+    @include('partials/become-partner/who-are-we')
+    @include('partials/become-partner/cse-community')
+    @include('partials/become-partner/statistics')
+    @include('partials/become-partner/why-do-sponsors')
+    @include('partials/become-partner/how-do-sponsors')
+    @include('partials/become-partner/what-do-sponsors')
+    @include('partials/become-partner/our-sponsors')
+    @include('partials/become-partner/contact-us')
 
-    @include('partials/footer')
+    @include('partials/become-partner/footer')
 
 @endsection
 
 {{-- Include Scripts that are used only in this page in this section --}}
 @section('scripts')
-
+<script src="{{asset('js/main.js')}}"></script>
+<script src="{{asset('js/become-partner/stats.js')}}"></script>
 @endsection
