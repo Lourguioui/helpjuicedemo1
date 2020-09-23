@@ -32,4 +32,5 @@
 {{-- Include Scripts that are used only in this page in this section --}}
 @section('scripts')
 <script src="{{asset('js/main.js')}}"></script>
+<script src="{{asset('js/become-partner/stats.js')}}"></script>
 @endsection

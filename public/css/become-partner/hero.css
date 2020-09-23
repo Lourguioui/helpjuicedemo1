@@ -1,9 +1,11 @@
 .hero {
     padding: 0px;
     text-align: center;
+    background-image:linear-gradient(to bottom, transparent, #383D59), url("../../img/Become-partner-hero-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-
-.hero > div {
+.hero-content {
     padding-top: 120px ;
 }
 

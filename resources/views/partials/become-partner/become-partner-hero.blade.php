@@ -1,5 +1,5 @@
 <section class="hero" id="hero">
-    <div class="container">
+    <div class="container hero-content">
         <div class="row justify-content-center d-flex flex-column align-items-center">
             <div class='col-12'>
                 <h1 class="title">CSE Become Partner<br />Lorem Ipsum</h1>
@@ -23,6 +23,5 @@
                 </div>
             </div>
         </div>
-
         <div>
 </section>
