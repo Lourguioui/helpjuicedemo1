@@ -10,7 +10,7 @@
             <a>Other Pages</a>
             <div class="dropdown-content">
                 <p><a href="#">CSE Vision</a></p>
-                <p><a href="#">Become Partner</a></p>
+                <p><a href="become-partner">Become Partner</a></p>
                 <p><a href="#">Members</a></p>
                 <p><a href="#">Join CSE</a></p>
             </div>
@@ -36,7 +36,7 @@
         <div class='nav-menu_item'><a data-scroll href="#media">Media</a></div>
         <div class='nav-menu_item'><a data-scroll href="#supportus">SupportUs</a></div>
         <div class='nav-menu_item'><a data-scroll href="#">CSE Vision</a></div>
-        <div class='nav-menu_item'><a data-scroll href="#">Become Partner</a></div>
+        <div class='nav-menu_item'><a data-scroll href="become-partner">Become Partner</a></div>
         <div class='nav-menu_item'><a data-scroll href="#">Members</a></div>
         <div class='nav-menu_item'><a data-scroll href="#">Join CSE</a></div>
     </div>

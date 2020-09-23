@@ -8,3 +8,5 @@
 //     document.getElementById("spanDate").innerHTML = days[today.getDay()] + ", " + months[today.getMonth()] + " " + today.getDate()+ ", " + today.getFullYear()
 //     + " " + today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
 // }, 1000)
+
+document.getElementById('hero-video').play();

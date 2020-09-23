@@ -1,25 +1,25 @@
 
-
 $(function () {
-    var header = document.querySelector("header");
-    var headerBg = header.getElementsByClassName("header-bg")[0];
+    // var header = document.querySelector("header");
+    // var headerBg = header.getElementsByClassName("header-bg")[0];
+    var headerBg=document.querySelector(".header-bg")
     var hero = document.getElementById("hero");
     headerBg.style.opacity = 0;
 
-    var top1 = $('#hero').offset().top;
-    var top2 = $('#events').offset().top;
+    // var top1 = $('#hero').offset().top;
+    // var top2 = $('#events').offset().top;
 
-    var color = '#383D59';
+    // var color = '#383D59';
     $(document).on("scroll", function () {
-        var scrollPos = $(document).scrollTop();
+        // var scrollPos = $(document).scrollTop();
 
-        if (scrollPos >= top1 && scrollPos < top2) {
-            // color = '#304185';
-        } else if (scrollPos >= top2) {
-            // color = '#304185'
-        } else {
+        // if (scrollPos >= top1 && scrollPos < top2) {
+        //     // color = '#304185';
+        // } else if (scrollPos >= top2) {
+        //     // color = '#304185'
+        // } else {
 
-        }
+        // }
         // headerBg.style.backgroundColor = color;
         height = 2 * hero.offsetHeight / 3;
         headerBg.style.opacity = window.scrollY / height;
@@ -27,11 +27,11 @@ $(function () {
 });
 
 
-document.getElementById('hero-video').play();
 
 var navBtn = document.querySelector('.nav-btn')
 var burger = document.querySelector('.btn-burger2')
 var menu = document.querySelector('.nav-menu')
+var headerBg=document.querySelector('.header-bg')
 var isOpen = false
 
 navBtn.addEventListener('click', toggleOpen)
