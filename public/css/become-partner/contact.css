@@ -1,0 +1,31 @@
+.contact{
+    background: transparent linear-gradient(180deg, #383d59 0%, #0b0c12 100%) 0%
+    0% no-repeat padding-box;
+    text-align: center;
+    margin-top: 4rem !important;
+    margin-bottom: 0px;
+}
+
+.contact-input {
+    background: transparent;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: grey;
+    border-width: 2px;
+    height: 80px;
+    margin: 2%;
+}
+
+.small {
+    width: 45%;
+}
+
+.big {
+    width: 94.5%;
+}
+
+::placeholder{
+    padding-left: 30px;
+    font-size: 1.2rem;
+    font-family: 'GilroyLight';
+}
