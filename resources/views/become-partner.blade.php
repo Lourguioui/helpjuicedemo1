@@ -5,6 +5,7 @@
 @section('styles')
 <link rel="stylesheet" href="{{asset('css/become-partner/hero.css')}}">
 <link rel="stylesheet" href="{{asset('css/become-partner/stats.css')}}">
+<link rel="stylesheet" href="{{asset('css/become-partner/whoarewe.css')}}">
 @endsection
 
 {{-- Each section of this page should be in a file, the file must be in this directory partials/{page-name}/ --}}
