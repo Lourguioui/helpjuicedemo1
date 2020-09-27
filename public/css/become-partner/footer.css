@@ -1,0 +1,14 @@
+.become-partner-footer{
+    background: #0b0c12 !important;
+}
+
+.become-partner-footer .copyright{
+    margin: 0 !important;
+}
+
+@media (max-width:767px){
+    .become-partner-footer .copyright{
+        margin-bottom: 10px !important;
+    }
+
+}
