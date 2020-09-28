@@ -1,0 +1,32 @@
+.para {
+    text-align: justify;
+}
+
+.why-img-container{
+    position:relative;
+    margin: auto;
+}
+.why-img {
+    width:100%;
+    border-radius: 30px;
+    border-color: white;
+    border-style: solid;
+    border-width: 8px;
+    position:relative;
+    width: 100%;
+    max-width: 350px;
+    max-height: 260px;
+}
+
+.why-title {
+    font-family: "GilroyExtraBold";
+    font-size: 3rem;
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+.why-p{
+    font-family: "GilroyLight";
+    text-align: left;
+    font-weight: 100;
+}

@@ -1,0 +1,16 @@
+.map-img {
+    opacity: 1;
+    background: transparent;
+    width: 60%;
+    margin-left: -10%;
+    margin-right: 0px;
+}
+
+.arrows{
+    opacity: 1;
+    display: block;
+    background: transparent;
+    height: 2%;
+    width: 2%;
+    margin: 15%;
+}
