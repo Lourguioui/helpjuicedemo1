@@ -1,0 +1,62 @@
+.whoarewe .whatdo {
+    padding: 0px;
+    text-align: center;
+    background-color: #383D59;
+    margin-top: 30px;
+    text-align: center;
+}
+
+
+ #carre {
+     z-index: 1;
+     width: 72px;
+     position: relative; 
+}
+ 
+ .icone  {
+ width: 35px;
+z-index: 2;
+ position: absolute;
+ top: 19px;
+ left: 21px;
+ }
+
+#phot {
+    position: relative; 
+
+}
+.titree {
+    font-size: 28px;
+    font-family: "GilroyExtraBold";
+}
+
+.jumbotron {
+    background-color: #383D59;
+    height: 200px;
+}
+.image-wrapper {
+    border-radius: 50%;
+    shape-outside: circle();
+    width: 250px;
+    height: 250px;
+    background-image: url(../../img/CSElogo.png);
+    background-position:50% 50%;
+    background-repeat:no-repeat;  
+    background-size: 370px;
+}
+
+@media screen and (max-width: 370px) {
+    .image-wrapper {
+        border-radius: 50%;
+        shape-outside: circle();
+        width: 160px;
+        height: 160px;
+        background-image: url(../../img/CSElogo.png);
+        background-position:50% 50%;
+        background-repeat:no-repeat;  
+        background-size: 240px;
+    }
+}
+
+
+

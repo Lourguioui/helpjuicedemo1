@@ -5,6 +5,7 @@
 @section('styles')
 <link rel="stylesheet" href="{{asset('css/become-partner/hero.css')}}">
 <link rel="stylesheet" href="{{asset('css/become-partner/stats.css')}}">
+<link rel="stylesheet" href="{{asset('css/become-partner/whoarewe.css')}}">
 
 <link rel="stylesheet" href="{{asset('css/become-partner/how-do-sponsors.css')}}">
 <link rel="stylesheet" href="{{asset('css/become-partner/footer.css')}}">
