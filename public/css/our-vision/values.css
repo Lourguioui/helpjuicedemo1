@@ -1,0 +1,28 @@
+.values-img {
+  width: 100%;
+  position: relative;
+  max-width: 674px;
+  max-height: 450px;
+}
+
+.square {
+  position: relative;
+}
+
+#carre {
+  z-index: 1;
+  width: 72px;
+  position: relative;
+}
+
+.number {
+  z-index: 2;
+  position: absolute;
+  top: 19px;
+  left: 29px;
+}
+
+.titree {
+  font-size: 28px;
+  font-family: "GilroyExtraBold";
+}
