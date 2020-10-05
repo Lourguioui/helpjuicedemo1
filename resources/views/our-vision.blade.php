@@ -4,6 +4,9 @@
 {{-- Include Styles that are used only in this page in this section --}}
 @section('styles')
 <link rel="stylesheet" href="{{asset('css/our-vision/hero.css')}}">
+<link rel="stylesheet" href="{{asset('css/our-vision/alumnis.css')}}">
+<link rel="stylesheet" href="{{asset('css/our-vision/members.css')}}">
+<link rel="stylesheet" href="{{asset('css/our-vision/values.css')}}">
 @endsection
 
 {{-- Each section of this page should be in a file, the file must be in this directory partials/{page-name}/ --}}
@@ -15,7 +18,10 @@
     @include('partials/nav-bar')
 
     @include('partials/our-vision/our-vision-hero')
-
+    @include('partials/our-vision/our-alumnis')
+    @include('partials/our-vision/what-are-our-values')
+    @include('partials/our-vision/members')
+    @include('partials/our-vision/join-us')
     @include('partials/footer')
 
 @endsection
