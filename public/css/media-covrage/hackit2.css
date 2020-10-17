@@ -1,0 +1,23 @@
+.avatar {
+    vertical-align: middle;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-left: 10px;
+  }
+.avatars{
+  margin-bottom: 20px;
+  margin-top: 8px;
+  margin-left: -20px;
+}
+#small-button{
+  margin-left: -18px;
+  height: 50px;
+  width: 150px;
+}
+.media-date{
+  margin-bottom: 18px;
+}
+#media-coverage-text{
+  margin-top: 200px;
+}
