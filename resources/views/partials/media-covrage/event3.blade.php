@@ -2,7 +2,12 @@
     <div class="container">
         <div class="row pt-5 justify-content-center align-items-center">
             <div class="col-12 col-md-6">
-                <img src="{{asset('img/media.png')}}" class="img-fluid" alt="Responsive image">
+            <div  class="vid"><video class="video" loop>
+                    <source src="{{asset('img/movie.mp4')}}" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+                </div>
+                <img src="{{asset('img/cadre.png')}}" class="img-fluid" id="cadre" alt="Responsive image"> 
             </div>
             <div class="col-10 col-md-6">
                 <div class="row justify-content-center justify-content-md-start">
@@ -14,7 +19,7 @@
                         </h3>
                         <h6 class="media-date" > 28 Avril 2015 </h6>
                     </div>
-                    <p>
+                    <p class='col-12 text-center-respo'>
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum odio quae voluptates dignissimos
                         voluptatibus fuga vel, necessitatibus quidem? Sit, dicta.
                     </p>

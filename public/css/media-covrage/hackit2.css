@@ -26,11 +26,99 @@
   max-width: 150%;
     height: auto;
 }
-.video{
-  position: absolute;
-  border-radius: 50%;
-  width: 190px;
-  height: 190px;
-  margin-top: 34%;
-  margin-left: 28.9%;
+.vid{
+  width: 34%;
+ height: 34%;
+ border-radius: 50%;
+ -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
+ -webkit-transform: rotate(0.000001deg); 
+ -webkit-border-radius: 100%; 
+ -moz-border-radius: 100%;
+ position: absolute;
+  margin-top: 33.6%;
+  margin-left: 28.6%;
+
 }
+.video{
+  margin-left: -20%;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 1199px) {
+
+  .vid{
+    width: 34%;
+   height: 34%;
+   border-radius: 50%;
+   -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
+   -webkit-transform: rotate(0.000001deg); 
+   -webkit-border-radius: 100%; 
+   -moz-border-radius: 100%;
+   position: absolute;
+    margin-top: 33.6%;
+    margin-left: 22.9%;
+  
+  }
+  .video{
+    margin-left: -30%;
+    margin-top: -9%;
+    object-fit: cover;
+  }
+}
+@media only screen and (max-width: 991px) {
+
+  .vid{
+    width: 34%;
+   height: 34%;
+   border-radius: 50%;
+   -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
+   -webkit-transform: rotate(0.000001deg); 
+   -webkit-border-radius: 100%; 
+   -moz-border-radius: 100%;
+   position: absolute;
+    margin-top: 32.6%;
+    margin-left: 10.9%;
+  
+  }
+  .video{
+    margin-left: -50%;
+    margin-top: -30%;
+    object-fit: cover;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .vid{
+    width: 34%;
+   height: 34%;
+   border-radius: 50%;
+   -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
+   -webkit-transform: rotate(0.000001deg); 
+   -webkit-border-radius: 100%; 
+   -moz-border-radius: 100%;
+   position: absolute;
+    margin-top: 32.8%;
+    margin-left: 30.9%;
+  
+  }
+  .video{
+    margin-left: -30%;
+    margin-top: -15%;
+    object-fit: cover;
+  }
+  #cadre{
+    margin-left: -25%;
+    max-width: 150%;
+      height: auto;
+  }
+  .text-center-respo {
+    text-align: center!important;
+  }
+  .avatars{
+    margin-bottom: 20px;
+    margin-top: 8px;
+    margin-left: -20px;
+    align-content: center;
+    align-self: center;
+  }
+}
+
