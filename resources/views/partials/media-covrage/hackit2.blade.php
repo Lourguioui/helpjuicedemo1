@@ -2,7 +2,11 @@
     <div class="container">
         <div class="row pt-5 justify-content-center align-items-center">
             <div class="col-12 col-md-6">
-                <img src="{{asset('img/media.png')}}" class="img-fluid" alt="Responsive image">
+            <video class="video" autoplay loop>
+                    <source src="{{asset('img/movie.mp4')}}" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video> 
+                <img src="{{asset('img/cadre.png')}}" class="img-fluid" id="cadre" alt="Responsive image">
             </div>
             <div class="col-10 col-md-6">
                 <div class="row justify-content-center justify-content-md-start">
@@ -38,10 +42,7 @@
             </div>
         </div>
         <div>
-        <!-- <video width="320" height="240" autoplay loop>
-            <source src="movie.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-        </video> -->
+         
         </div>
     </div>
 </section>
