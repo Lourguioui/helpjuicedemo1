@@ -19,12 +19,15 @@
   margin-bottom: 18px;
 }
 #media-coverage-text{
-  margin-top: 200px;
+  margin-top: 100px;
 }
 #cadre{
   margin-left: -150px;
   max-width: 150%;
     height: auto;
+}
+section{
+  margin-top: -100px;
 }
 .vid{
   width: 34%;
