@@ -23,12 +23,13 @@
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum odio quae voluptates dignissimos
                         voluptatibus fuga vel, necessitatibus quidem? Sit, dicta.
                     </p>
-                </div>
-                <div class="avatars">
+                    <div class="avatars">
                     <img src="{{asset('img/avatar1.png')}}" alt="Avatar" class="avatar">
                     <img src="{{asset('img/avatar2.png')}}" alt="Avatar" class="avatar">
                     <img src="{{asset('img/avatar3.jpg')}}" alt="Avatar" class="avatar">
+                    </div>
                 </div>
+                
                 <a href="{{route('media')}}" target="_blank">
                         <button class="mt-2" id="small-button">
                             <span></span>

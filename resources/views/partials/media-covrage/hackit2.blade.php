@@ -29,8 +29,9 @@
                     <img src="{{asset('img/avatar1.png')}}" alt="Avatar" class="avatar">
                     <img src="{{asset('img/avatar2.png')}}" alt="Avatar" class="avatar">
                     <img src="{{asset('img/avatar3.jpg')}}" alt="Avatar" class="avatar">
+                     </div>
                 </div>
-                <div class="col-12 ">
+                    <div class='row r2'>
                     <a href="{{route('media')}}" target="_blank">
                             <button class="mt-2" id="small-button">
                                 <span></span>
@@ -40,9 +41,7 @@
                                 See the passage !
                             </button>
                     </a>
-                </div>
-                </div>
-               
+                    </div>
                 
             </div>
         </div>
