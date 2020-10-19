@@ -46,6 +46,9 @@ section{
   margin-left: -20%;
   object-fit: cover;
 }
+.part2{
+  display: none;
+}
 
 @media only screen and (max-width: 1199px) {
 
@@ -90,6 +93,12 @@ section{
   }
 }
 @media only screen and (max-width: 767px) {
+  .part2{
+    display: block;
+  }
+  .part1{
+    display: none;
+  }
   .vid{
     width: 34%;
    height: 34%;
