@@ -44,15 +44,67 @@
 <script src="{{asset('js/become-partner/stats.js')}}"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbkAc5WgnIYDkqCPo0c5beRSFjtDcOsOM&callback=initMap&libraries=&v=weekly" defer ></script>
     <script>
+    const members =[
+          {
+            lat : 36.73225,
+            lng : 3.08786,
+            name: "Boulboul Billel",
+            icon: "{{asset('img/avatar1.png')}}"
+          },
+          {
+            lat : 36.73225,
+            lng : 3.18746,
+            name: "Said Froute",
+            icon: "{{asset('img/avatar2.png')}}"
+          },
+          {
+            lat : 36.73225,
+            lng : 3.28716,
+            name: "Djamel Zdeq",
+            icon: "{{asset('img/avatar1.png')}}"
+          },
+          {
+            lat : 36.73225,
+            lng : 3.38726,
+            name: "Nassim Rdekh",
+            icon: "{{asset('img/avatar3.jpg')}}"
+          },
+        ]
       let map;
 
       function initMap() {
+        //Init the Map centeered in Algiers
         map = new google.maps.Map(document.getElementById("map"), {
           zoom: 10,
           center: new google.maps.LatLng(36.73225, 3.08746),
           mapTypeId: "roadmap",
+         //mapId: "6205470d7b62da92",
         });
-       
+        
+        
+        members.forEach((member)=>{
+          let marker ;
+          //Creating the content of the Pop-Up
+          const content = '<div style="background: transparent linear-gradient(180deg, #383d59 0%, #0b0c12 100%) 0% 0% no-repeat padding-box;">' +
+            '<img src="' + member.icon + '" alt="'+member.name+'" height="80px" style="border-radius:50%;margin-left:auto;margin-right:auto;display:block;"/>' +
+              '<div style="color:white;font-size:15px;text-align:center">Name: ' + member.name + '</div>' +
+              '<span style="color:white;">Lat: ' + member.lat + '</span>' +
+              '<span style="color:white">, Long: ' + member.lng + '</span>' +
+              '</div>';  
+          const infowindow = new google.maps.InfoWindow({
+            content: content,
+          });
+          //Create Marker with Member Infos  
+          marker =new google.maps.Marker({
+            position: new google.maps.LatLng(member.lat, member.lng),
+            map,
+            title:member.name,
+          });
+          marker.addListener("click", ()=>{
+            infowindow.close();
+            infowindow.open(map,marker);
+          });
+        });
       }
     </script>
 @endsection
