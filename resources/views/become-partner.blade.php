@@ -42,4 +42,17 @@
 @section('scripts')
 <script src="{{asset('js/main.js')}}"></script>
 <script src="{{asset('js/become-partner/stats.js')}}"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbkAc5WgnIYDkqCPo0c5beRSFjtDcOsOM&callback=initMap&libraries=&v=weekly" defer ></script>
+    <script>
+      let map;
+
+      function initMap() {
+        map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 10,
+          center: new google.maps.LatLng(36.73225, 3.08746),
+          mapTypeId: "roadmap",
+        });
+       
+      }
+    </script>
 @endsection
