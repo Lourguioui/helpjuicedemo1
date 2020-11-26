@@ -1,7 +1,7 @@
 <section id="contacts-us" class='contact'>
     <div class="container_fluid" >
         <div class="row justify-content-center">
-            <div class="col-auto">
+            <div class="col-auto text-center">
                 <h1 class="title">Contact Us.</h1>
             </div>
         </div>

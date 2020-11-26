@@ -1,7 +1,7 @@
 <section id="why">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-auto">
+            <div class="col-auto text-center">
                 <h1 class="title">Why do sponsors partner with CSE ?</h1>
             </div>
         </div>
