@@ -81,7 +81,10 @@
          //mapId: "6205470d7b62da92",
         });
         
-        
+        const infowindow = new google.maps.InfoWindow({
+          maxWidth: 350,
+          pixelOffset: new google.maps.Size(-10,-25)
+        });
         members.forEach((member)=>{
           let marker ;
           //Creating the content of the Pop-Up
@@ -91,9 +94,6 @@
               '<span style="color:white;">Lat: ' + member.lat + '</span>' +
               '<span style="color:white">, Long: ' + member.lng + '</span>' +
               '</div>';  
-          const infowindow = new google.maps.InfoWindow({
-            content: content,
-          });
           //Create Marker with Member Infos  
           marker =new google.maps.Marker({
             position: new google.maps.LatLng(member.lat, member.lng),
@@ -101,8 +101,9 @@
             title:member.name,
           });
           marker.addListener("click", ()=>{
-            infowindow.close();
+            infowindow.setContent(content);
             infowindow.open(map,marker);
+            infowindow.setPosition(new google.maps.LatLng(member.lat,member.lng));
           });
         });
       }
