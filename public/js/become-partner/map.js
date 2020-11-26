@@ -131,10 +131,16 @@ function initMap() {
         '<span style="color:white;">Lat: ' + member.lat + '</span>' +
         '<span style="color:white">, Long: ' + member.lng + '</span>' +
         '</div>';  
-    //Create Marker with Member Infos  
+    //Create Marker with Member Infos 
     marker =new google.maps.Marker({
       position: new google.maps.LatLng(member.lat, member.lng),
       map,
+      icon : {
+        url :member.icon,
+        scaledSize: new google.maps.Size(50,50),
+        origin: new google.maps.Point(0,0), 
+        anchor: new google.maps.Point(25, 55) 
+      },
       title:member.name,
     });
     marker.addListener("click", ()=>{
