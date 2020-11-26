@@ -21,7 +21,7 @@ const members =[
       lat : 36.73225,
       lng : 3.38726,
       name: "Nassim Rdekh",
-      icon: "../../img/avatar3.jpg"
+      icon: "../../img/avatar2.png"
     },
   ]
 
@@ -119,8 +119,7 @@ function initMap() {
   });
   
   const infowindow = new google.maps.InfoWindow({
-    maxWidth: 350,
-    pixelOffset: new google.maps.Size(-10,-25)
+    pixelOffset: new google.maps.Size(0,-10)
   });
   members.forEach((member)=>{
     let marker ;
@@ -131,7 +130,23 @@ function initMap() {
         '<span style="color:white;">Lat: ' + member.lat + '</span>' +
         '<span style="color:white">, Long: ' + member.lng + '</span>' +
         '</div>';  
-    //Create Marker with Member Infos 
+    //Create Marker with Member Infos  
+    marker =new google.maps.Marker({
+        position: new google.maps.LatLng(member.lat, member.lng),
+        map,
+        icon : {
+           url:"../../img/pin.svg", 
+           fillColor:'black',
+            scale:1,
+            strokeColor : "black"
+        },
+      });
+      
+    marker.addListener("click", ()=>{
+        infowindow.setContent(content);
+        infowindow.open(map,marker);
+        infowindow.setPosition(new google.maps.LatLng(member.lat,member.lng));
+      });
     marker =new google.maps.Marker({
       position: new google.maps.LatLng(member.lat, member.lng),
       map,
@@ -139,14 +154,9 @@ function initMap() {
         url :member.icon,
         scaledSize: new google.maps.Size(50,50),
         origin: new google.maps.Point(0,0), 
-        anchor: new google.maps.Point(25, 55) 
+        anchor: new google.maps.Point(25, 80) 
       },
       title:member.name,
-    });
-    marker.addListener("click", ()=>{
-      infowindow.setContent(content);
-      infowindow.open(map,marker);
-      infowindow.setPosition(new google.maps.LatLng(member.lat,member.lng));
     });
   });
 }
