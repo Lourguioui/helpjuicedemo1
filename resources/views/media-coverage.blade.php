@@ -3,7 +3,10 @@
 
 {{-- Include Styles that are used only in this page in this section --}}
 @section('styles')
-
+<link rel="stylesheet" href="{{asset('css/media-covrage/hackit2.css')}}">
+<link rel="stylesheet" href="{{asset('css/media-covrage/media.css')}}">
+<link rel="stylesheet" href="{{asset('css/our-vision/members.css')}}">
+<link rel="stylesheet" href="{{asset('css/our-vision/values.css')}}">
 @endsection
 
 {{-- Each section of this page should be in a file, the file must be in this directory partials/{page-name}/ --}}
@@ -14,6 +17,12 @@
 
     @include('partials/nav-bar')
 
+    @include('partials/media-covrage/media-coverage')
+    @include('partials/media-covrage/hackit2')
+    @include('partials/media-covrage/awa2014')
+    @include('partials/media-covrage/event3')
+    @include('partials/media-covrage/event4')
+    
 
 
     @include('partials/footer')
