@@ -95,12 +95,23 @@
                     {{-- <button onclick="{{set_lang('fr')}}">Change Language</button> --}}
                     <button class="btn btn-default dropdown-toggle dropdown-btn" type="button" id="menu1" data-toggle="dropdown">
                         <i class="fa fa-globe" style="color: #10121A;"></i>
-                        Languages
+                        @if (app()->isLocale('en'))
+                            English
+                        @else
+                            Francais
+                        @endif
                     </button>
                     <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-                        <li role="presentation"><a role="menuitem" class="menu-link" tabindex="-1" href="#">English</a></li>
-                        <li role="presentation"><a role="menuitem" class="menu-link" tabindex="-1" href="#">French</a></li>
-
+                        <li role="presentation" class="menu-item menu-item1">
+                        <a role="menuitem" class="menu-link" tabindex="-1" href="{{route(Route::currentRouteName(), 'en')}}">
+                                English
+                            </a>
+                        </li>
+                        <li role="presentation" class="menu-item menu-item2">
+                            <a role="menuitem" class="menu-link" tabindex="-1" href="{{route(Route::currentRouteName(), 'fr')}}">
+                                French
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <div class="row">
