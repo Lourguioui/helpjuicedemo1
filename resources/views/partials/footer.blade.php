@@ -91,9 +91,18 @@
                         </div>
                     </div>
                 </div>
-                {{-- <div class="row">
-                    <button onclick="{{set_lang('fr')}}">Change Language</button>
-                </div> --}}
+                <div class="row dropdown-container">
+                    {{-- <button onclick="{{set_lang('fr')}}">Change Language</button> --}}
+                    <button class="btn btn-default dropdown-toggle dropdown-btn" type="button" id="menu1" data-toggle="dropdown">
+                        <i class="fa fa-globe" style="color: #10121A;"></i>
+                        Languages
+                    </button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                        <li role="presentation"><a role="menuitem" class="menu-link" tabindex="-1" href="#">English</a></li>
+                        <li role="presentation"><a role="menuitem" class="menu-link" tabindex="-1" href="#">French</a></li>
+
+                    </ul>
+                </div>
                 <div class="row">
                     <div class="col-12">
                         <p class="copyright">Copyright © <script>document.write(new Date().getFullYear())</script> Club Scientifique de l'ESI. All
