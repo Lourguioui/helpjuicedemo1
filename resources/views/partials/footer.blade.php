@@ -20,7 +20,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>                          
+                        </div>
                     </div>
                 </div>
                 <div class="row mb-4 justify-content-md-center">
@@ -91,6 +91,9 @@
                         </div>
                     </div>
                 </div>
+                {{-- <div class="row">
+                    <button onclick="{{set_lang('fr')}}">Change Language</button>
+                </div> --}}
                 <div class="row">
                     <div class="col-12">
                         <p class="copyright">Copyright © <script>document.write(new Date().getFullYear())</script> Club Scientifique de l'ESI. All

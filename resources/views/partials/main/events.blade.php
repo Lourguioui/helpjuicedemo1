@@ -2,13 +2,12 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col- title">
-                Events.
+                {{__('main.events')}}
             </div>
         </div>
         <div class="row justify-content-center">
             <p class='col-9 events-p'>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. In quidem atque qui magnam
-                voluptatibus nobis aliquam? Ullam expedita minima culpa aspernatur provident quisquam
+                {{__('main.events_text')}}
             </p>
         </div>
         <div class="row justify-content-center">
