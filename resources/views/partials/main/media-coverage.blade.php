@@ -14,7 +14,7 @@
                     <p>
                         {{__('main.media')}}
                     </p>
-                    <a href="{{route('media', app()->getLocale())}}" target="_blank">
+                    <a href="{{route('media', app()->getLocale())}}">
                         <button class="mt-2">
                             <span></span>
                             <span></span>

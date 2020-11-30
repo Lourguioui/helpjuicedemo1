@@ -51,7 +51,7 @@ src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1">
 <div class="col-lg-1">
 </div>
 <div class="col-lg-4">
-<a href="/our-vision" target="_blank" >
+<a href="{{route('our-vision', app()->getLocale())}}">
                     <button class="buttonour">
                         <span></span>
                         <span></span>

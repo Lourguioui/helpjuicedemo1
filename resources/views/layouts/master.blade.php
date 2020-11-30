@@ -7,19 +7,19 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="apple-touch-icon" href="icon.png">
+    <link rel="manifest" href="{{env('APP_URL') . '/site.webmanifest'}}">
+    <link rel="apple-touch-icon" href="{{env('APP_URL') . '/icon.png'}}">
     <!-- Place favicon.ico in the root directory -->
-    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="shortcut icon" href="{{env('APP_URL') . '/img/favicon.png'}}">
     <!-- Boostrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="{{env('APP_URL') . '/css/main.css'}}">
     <!-- Normalize CSS -->
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="{{env('APP_URL') . '/css/normalize.css'}}">
     <!-- Base CSS -->
-    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="{{env('APP_URL') . '/css/base.css'}}">
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/06a369e083.js" crossorigin="anonymous"></script>
 
@@ -59,7 +59,7 @@
 
     @yield('body')
 
-    <script src="js/vendor/modernizr-3.8.0.min.js"></script>
+    <script src="{{env('APP_URL') . '/js/vendor/modernizr-3.8.0.min.js'}}"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
@@ -68,8 +68,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
+    <script src="{{env('APP_URL') . '/js/plugins.js'}}"></script>
+    <script src="{{env('APP_URL') . 'js/main.js'}}"></script>
 
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <script>
