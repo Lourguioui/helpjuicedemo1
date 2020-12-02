@@ -111,15 +111,17 @@ let map;
 function initMap() {
   //Init the Map centeered in Algiers
   map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 10,
+    zoom: 5,
     center: new google.maps.LatLng(36.73225, 3.08746),
     mapTypeId: "roadmap",
-    styles ,
-   //mapId: "6205470d7b62da92",
+   // styles ,
+    mapTypeControl :false,
+    streetViewControl :false,
+    //mapId: "6205470d7b62da92",
   });
   
   const infowindow = new google.maps.InfoWindow({
-    pixelOffset: new google.maps.Size(0,-10)
+    maxWidth: 350
   });
   members.forEach((member)=>{
     let marker ;
@@ -129,7 +131,7 @@ function initMap() {
         '<div style="color:white;font-size:15px;text-align:center">Name: ' + member.name + '</div>' +
         '<span style="color:white;">Lat: ' + member.lat + '</span>' +
         '<span style="color:white">, Long: ' + member.lng + '</span>' +
-        '</div>';  
+    '</div>';
     //Create Marker with Member Infos  
     marker =new google.maps.Marker({
         position: new google.maps.LatLng(member.lat, member.lng),
