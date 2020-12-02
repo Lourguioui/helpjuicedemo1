@@ -5,6 +5,6 @@
                 <h1 class="title">CSE Community.</h1>
             </div>
         </div>
-        <div id="map"> </div>
+        <div class="justify-content-center" id="map"> </div>
     </div>
 </section>
