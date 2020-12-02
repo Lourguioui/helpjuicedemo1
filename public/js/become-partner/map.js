@@ -161,4 +161,10 @@ function initMap() {
       title:member.name,
     });
   });
+  google.maps.event.addListener(map, 'click', function() {
+    infowindow.close();
+  });
+  google.maps.event.addListener(map, 'drag', function() {
+    infowindow.close();
+  });
 }
