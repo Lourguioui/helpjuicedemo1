@@ -15,6 +15,12 @@
     display: block;
     border: double 15px transparent;
   padding: 17px;
+  border-radius: 35px;
+  background-image: linear-gradient(white, white),
+    radial-gradient(circle at top left, #434764 , #363951 );
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 3px 3px 16px 0px rgba(0, 0, 0, 0.16);
   }
 
   /* Optional: Makes the sample page fill the window. */
