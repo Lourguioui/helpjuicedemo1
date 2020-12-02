@@ -5,6 +5,7 @@ header {
     max-height: 100px;
     position: fixed;
     font-size: 1em;
+    top:0;
     z-index: 1001;
     display: flex;
     flex-direction: row;

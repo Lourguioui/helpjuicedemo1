@@ -1,4 +1,4 @@
-<section id="alumnis">
+<section id="alumnis" >
     <div class="container">
         <div class="row justify-content-center">
             <div class="col- title">
