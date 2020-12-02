@@ -42,6 +42,6 @@
 @section('scripts')
 <script src="{{asset('js/main.js')}}"></script>
 <script src="{{asset('js/become-partner/stats.js')}}"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbkAc5WgnIYDkqCPo0c5beRSFjtDcOsOM&callback=initMap&libraries=&v=weekly" defer ></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbkAc5WgnIYDkqCPo0c5beRSFjtDcOsOM&map_ids=6205470d7b62da92&callback=initMap&libraries=&v=weekly" defer ></script>
 <script src="{{asset('js/become-partner/map.js')}}"> </script>
 @endsection
