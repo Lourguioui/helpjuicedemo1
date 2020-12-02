@@ -3,25 +3,29 @@ const members =[
       lat : 36.73225,
       lng : 3.08786,
       name: "Boulboul Billel",
-      icon: "../../img/avatar1.png"
+      icon: "../../img/avatar1.png",
+      poste:"DEV"
     },
     {
       lat : 36.73225,
       lng : 3.18746,
       name: "Said Froute",
-      icon: "../../img/avatar2.png"
+      icon: "../../img/avatar2.png",
+      poste:"RELEX"
     },
     {
       lat : 36.73225,
       lng : 3.28716,
       name: "Djamel Zdeq",
-      icon: "../../img/avatar1.png"
+      icon: "../../img/avatar1.png",
+      poste:"Comm"
     },
     {
       lat : 36.73225,
       lng : 3.38726,
       name: "Nassim Rdekh",
-      icon: "../../img/avatar2.png"
+      icon: "../../img/avatar2.png",
+      poste:"Design"
     },
   ]
 
@@ -126,11 +130,15 @@ function initMap() {
   members.forEach((member)=>{
     let marker ;
     //Creating the content of the Pop-Up
-    const content = '<div style="background: transparent linear-gradient(180deg, #383d59 0%, #0b0c12 100%) 0% 0% no-repeat padding-box;">' +
-      '<img src="' + member.icon + '" alt="'+member.name+'" height="80px" style="border-radius:50%;margin-left:auto;margin-right:auto;display:block;"/>' +
-        '<div style="color:white;font-size:15px;text-align:center">Name: ' + member.name + '</div>' +
-        '<span style="color:white;">Lat: ' + member.lat + '</span>' +
-        '<span style="color:white">, Long: ' + member.lng + '</span>' +
+    const content = '<div class="wrapper" >'+
+        '<div class="img-area">' + 
+              '<div class="inner-area">'+
+                  '<img  src="' + member.icon + '" alt="'+member.name+'" />' + 
+               '</div>'+
+        '</div>'+  
+        '<div class="icon dots"><i class="fas fa-ellipsis-v"></i></div>'+
+        '<div class="name">'+member.name+'</div>'+
+        '<div class="about"> Poste Actuel : '+member.poste +'</div>'+
     '</div>';
     //Create Marker with Member Infos  
     marker =new google.maps.Marker({
