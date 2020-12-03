@@ -16,15 +16,11 @@
 @section('body')
 
     @include('partials/nav-bar')
-
     @include('partials/media-covrage/media-coverage')
     @include('partials/media-covrage/hackit2')
     @include('partials/media-covrage/awa2014')
     @include('partials/media-covrage/event3')
     @include('partials/media-covrage/event4')
-    
-
-
     @include('partials/footer')
 
 @endsection

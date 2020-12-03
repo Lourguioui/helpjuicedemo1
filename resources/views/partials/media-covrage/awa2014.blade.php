@@ -33,10 +33,11 @@
                 </div>
             </div>
             <div class="col-12 col-md-6">
-             <div  class="vid"><video class="video" autoplay loop>
-                    <source src="{{asset('img/movie2.mp4')}}" type="video/mp4" />
-                    Your browser does not support the video tag.
-                </video>
+                <div class="vid">
+                    <video class="video" autoplay loop>
+                        <source src="{{asset('img/movie2.mp4')}}" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
 
 

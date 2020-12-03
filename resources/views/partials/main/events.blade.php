@@ -12,13 +12,15 @@
         </div>
         <div class="row justify-content-center">
             <div class="col-auto">
-                <button>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    BUTTON
-                </button>
+                <a href="{{ route('events', app()->getLocale()) }}">
+                    <button>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        BUTTON
+                    </button>
+                </a>
             </div>
         </div>
     </div>
