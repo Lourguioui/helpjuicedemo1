@@ -5,8 +5,7 @@
 @section('styles')
 <link rel="stylesheet" href="{{asset('css/media-covrage/hackit2.css')}}">
 <link rel="stylesheet" href="{{asset('css/media-covrage/media.css')}}">
-<link rel="stylesheet" href="{{asset('css/our-vision/members.css')}}">
-<link rel="stylesheet" href="{{asset('css/our-vision/values.css')}}">
+
 @endsection
 
 {{-- Each section of this page should be in a file, the file must be in this directory partials/{page-name}/ --}}
