@@ -3,7 +3,8 @@
 
 {{-- Include Styles that are used only in this page in this section --}}
 @section('styles')
-
+<link rel="stylesheet" href="{{env('APP_URL') . '/css/events/hero.css'}}">
+<link rel="stylesheet" href="{{env('APP_URL') . '/css/events/events.css'}}">
 @endsection
 
 {{-- Each section of this page should be in a file, the file must be in this directory partials/{page-name}/ --}}
@@ -14,7 +15,8 @@
 
     @include('partials/nav-bar')
 
-
+    @include('partials/events/hero')
+    @include('partials/events/events')
 
     @include('partials/footer')
 
@@ -22,5 +24,5 @@
 
 {{-- Include Scripts that are used only in this page in this section --}}
 @section('scripts')
-
+<script src="{{asset('js/main.js')}}"></script>
 @endsection
