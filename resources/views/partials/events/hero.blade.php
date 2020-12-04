@@ -1,8 +1,8 @@
-<section class="hero mt-4" id="hero">
-<div class="container" id="media-coverage-text">
+<section class="hero" id="hero">
+    <div class="container" id="media-coverage-text">
         <div class="row justify-content-center">
             <div class="col- title">
-            Media Coverage.
+                {{ __('events.our_events') }}
             </div>
         </div>
         <div class="row justify-content-center">

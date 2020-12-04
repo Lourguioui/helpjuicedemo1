@@ -4,7 +4,7 @@
 {{-- Include Styles that are used only in this page in this section --}}
 @section('styles')
 
-<link rel="stylesheet" href="{{asset('css/member/member-info.css')}}">
+<link rel="stylesheet" href="{{env('APP_URL') . '/css/member/member-info.css'}}">
 
 @endsection
 
@@ -23,5 +23,5 @@
 
 {{-- Include Scripts that are used only in this page in this section --}}
 @section('scripts')
-<script src="{{asset('js/member/cse-journey.js')}}"></script>
+<script src="{{env('APP_URL') . '/js/member/cse-journey.js'}}"></script>
 @endsection

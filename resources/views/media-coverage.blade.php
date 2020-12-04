@@ -3,8 +3,8 @@
 
 {{-- Include Styles that are used only in this page in this section --}}
 @section('styles')
-<link rel="stylesheet" href="{{asset('css/media-covrage/hackit2.css')}}">
-<link rel="stylesheet" href="{{asset('css/media-covrage/media.css')}}">
+<link rel="stylesheet" href="{{env('APP_URL') . '/css/media-covrage/hackit2.css'}}">
+<link rel="stylesheet" href="{{env('APP_URL') . '/css/media-covrage/media.css'}}">
 
 @endsection
 
@@ -15,7 +15,6 @@
 @section('body')
 
     @include('partials/nav-bar')
-
     @include('partials/media-covrage/media-coverage')
     @include('partials/media-covrage/hackit2')
     @include('partials/media-covrage/awa2014')
@@ -27,5 +26,5 @@
 
 {{-- Include Scripts that are used only in this page in this section --}}
 @section('scripts')
-
+<script src="{{asset('js/main.js')}}"></script>
 @endsection

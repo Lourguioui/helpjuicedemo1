@@ -59,7 +59,7 @@
             </div>
         </div>
         <div class="row justify-content-center mt-4">
-            <a class="col-auto mt-4" href="/become-partner">
+        <a class="col-auto mt-4" href="{{route('partner', app()->getLocale())}}">
                 <button>
                     <span></span>
                     <span></span>

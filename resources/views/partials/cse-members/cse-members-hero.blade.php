@@ -19,11 +19,11 @@
                                     </div>
               </div>
              </div>
-            </div>       
+            </div>
             <div class='col-auto'>
                 <div class="arrow bounce"  style="margin-top:48px ;">
                     <a href="#"><i class="fas fa-angle-double-down fa-2x"></i></a>
                 </div>
-            </div>   
+            </div>
     </div>
 </section>
