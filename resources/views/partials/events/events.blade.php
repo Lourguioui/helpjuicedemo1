@@ -16,22 +16,22 @@
                 </p>
                 <div class='row justify-content-start' style='position:relative; padding-left: 0px !important'>
                     <div class='col-4 col-sm-4 col-lg-4 stats-img-container'>
-                        <img class='stats-img' src="{{asset('img/Circle_.png')}}"/>
+                        <img class='stats-img' src="{{asset('img/Circle_image.png')}}"/>
                     <div class='stats-p bold'><p class='counter bold' data-target="1001">0</p>Members</div>
                     </div>
                     <div class='col-4 col-sm-4 col-lg-4 stats-img-container'>
-                        <img class='stats-img' src="{{asset('img/Circle_.png')}}"/>
+                        <img class='stats-img' src="{{asset('img/Circle_image.png')}}"/>
                     <div class='stats-p bold'><p class='counter bold' data-target="30">0</p>Events</div>
                     </div>
                     <div class='col-4 col-sm-4 col-lg-4 stats-img-container'>
-                        <img class='stats-img' src="{{asset('img/Circle_.png')}}"/>
+                        <img class='stats-img' src="{{asset('img/Circle_image.png')}}"/>
                     <div class='stats-p bold'><p class='counter bold' data-target="50">0</p>Formations</div>
                     </div>
                 </div>
 
             </div>
             <div class="col-lg-6 img-container pl-4">
-                <img class="bg-img img-fluid" src="{{ asset('img/cal.png') }}" />
+                <img class="bg-img img-fluid" src="{{ asset('img/Calendar_image.png') }}" />
                 <img class="event-img img-fluid" src="{{ asset('img/event1.png') }}" />
                 <a class="event-btn">
                     <button>
@@ -48,7 +48,7 @@
     <div class="event-container1 container">
         <div class="row">
             <div class="col-lg-6 img-container pl-4">
-                <img class="bg-img img-fluid" src="{{ asset('img/cal.png') }}" />
+                <img class="bg-img img-fluid" src="{{ asset('img/Calendar_image.png') }}" />
                 <img class="event-img img-fluid" src="{{ asset('img/event1.png') }}" />
                 <a class="event-btn">
                     <button>
@@ -75,15 +75,15 @@
                 </p>
                 <div class='row justify-content-start' style='position:relative; padding-left: 0px !important'>
                     <div class='col-4 col-sm-4 col-lg-4 stats-img-container'>
-                        <img class='stats-img' src="{{asset('img/Circle_.png')}}"/>
+                        <img class='stats-img' src="{{asset('img/Circle_image.png')}}"/>
                     <div class='stats-p bold'><p class='counter bold' data-target="1001">0</p>Members</div>
                     </div>
                     <div class='col-4 col-sm-4 col-lg-4 stats-img-container'>
-                        <img class='stats-img' src="{{asset('img/Circle_.png')}}"/>
+                        <img class='stats-img' src="{{asset('img/Circle_image.png')}}"/>
                     <div class='stats-p bold'><p class='counter bold' data-target="30">0</p>Events</div>
                     </div>
                     <div class='col-4 col-sm-4 col-lg-4 stats-img-container'>
-                        <img class='stats-img' src="{{asset('img/Circle_.png')}}"/>
+                        <img class='stats-img' src="{{asset('img/Circle_image.png')}}"/>
                     <div class='stats-p bold'><p class='counter bold' data-target="50">0</p>Formations</div>
                     </div>
                 </div>
@@ -108,22 +108,22 @@
                 </p>
                 <div class='row justify-content-start' style='position:relative; padding-left: 0px !important'>
                     <div class='col-4 col-sm-4 col-lg-4 stats-img-container'>
-                        <img class='stats-img' src="{{asset('img/Circle_.png')}}"/>
+                        <img class='stats-img' src="{{asset('img/Circle_image.png')}}"/>
                     <div class='stats-p bold'><p class='counter bold' data-target="1001">0</p>Members</div>
                     </div>
                     <div class='col-4 col-sm-4 col-lg-4 stats-img-container'>
-                        <img class='stats-img' src="{{asset('img/Circle_.png')}}"/>
+                        <img class='stats-img' src="{{asset('img/Circle_image.png')}}"/>
                     <div class='stats-p bold'><p class='counter bold' data-target="30">0</p>Events</div>
                     </div>
                     <div class='col-4 col-sm-4 col-lg-4 stats-img-container'>
-                        <img class='stats-img' src="{{asset('img/Circle_.png')}}"/>
+                        <img class='stats-img' src="{{asset('img/Circle_image.png')}}"/>
                     <div class='stats-p bold'><p class='counter bold' data-target="50">0</p>Formations</div>
                     </div>
                 </div>
 
             </div>
             <div class="col-lg-6 img-container pl-4">
-                <img class="bg-img img-fluid" src="{{ asset('img/cal.png') }}" />
+                <img class="bg-img img-fluid" src="{{ asset('img/Calendar_image.png') }}" />
                 <img class="event-img img-fluid" src="{{ asset('img/event1.png') }}" />
                 <a class="event-btn">
                     <button>
