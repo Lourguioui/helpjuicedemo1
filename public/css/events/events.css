@@ -2,14 +2,14 @@
   padding-left: 0px !important;
   padding-right: 0px !important;
 }
-.event-container{
+.event-container {
   margin-top: 10%;
 }
-.event-container2{
+.event-container2 {
   margin-top: 10%;
   display: none;
 }
-.event-container1{
+.event-container1 {
   margin-top: 10%;
 }
 .date {
@@ -30,9 +30,13 @@
 .img-container {
   text-align: center;
   position: relative;
+  /* padding-top: 50px !important; */
+  padding-bottom: 30px !important;
+  /* padding-right: 50px !important; */
 }
 .bg-img {
-  width: 100%;
+  width: 90%;
+  /* height: 90%; */
   z-index: 1;
   position: relative;
 }
@@ -40,71 +44,142 @@
 .event-img {
   z-index: 2;
   position: absolute;
-  top: 25%;
-  right: 15%;
+  top: 20%;
+  right: 17.5%;
+  width: 65% !important;
 }
 
 .event-btn {
   z-index: 2;
   position: absolute;
-  bottom: 3%;
+  bottom: 12.5%;
   right: 24%;
   min-width: 50% !important;
 }
 
-.event-btn>button{
+.event-btn > button {
+  height: 50px;
+}
+
+.event-btn > button {
   min-width: 50% !important;
   width: 100%;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1201px) {
   .event-img {
-    top: 20%;
-    right: 15%;
-    width: 70%;
+    top: 22%;
+    right: 17.5%;
+    width: 65%;
   }
-  .event-btn{
-    bottom: 5%;
-    right: 18%;
+  .event-btn {
+    bottom: 12% !important;
+    right: 23%;
     min-width: 50% !important;
   }
 }
-@media screen and (max-width: 992px) {
-  .event-container1{
+
+@media screen and (max-width: 1200px) {
+  .event-img {
+    top: 22%;
+    right: 17.5%;
+    width: 65%;
+  }
+  .event-btn {
+    bottom: 18% !important;
+    right: 24% !important;
+    min-width: 50% !important;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .event-img {
+    top: 22%;
+    right: 17.5%;
+    width: 65%;
+  }
+  .event-btn {
+    bottom: 18%;
+    right: 25% !important;
+    min-width: 50% !important;
+  }
+}
+@media screen and (max-width: 993px) {
+  .event-container1 {
     display: none;
   }
-  .event-container2{
+  .event-container2 {
     display: block;
   }
   .event-img {
     top: 20%;
-    right: 15%;
+    right: 16%;
     width: 70%;
     min-width: 50% !important;
   }
-  .event-btn{
-    bottom: 5%;
-    right: 20%;
+  .event-btn {
+    bottom: 18%;
+    right: 18% !important;
     min-width: 50% !important;
     width: 60% !important;
   }
 }
-
-@media screen and (max-width: 768px){
+@media screen and (max-width: 992px) {
+  .event-container1 {
+    display: none;
+  }
+  .event-container2 {
+    display: block;
+  }
   .event-img {
     top: 20%;
-    right: 15%;
+    right: 16%;
     width: 70%;
+    min-width: 50% !important;
   }
-  .event-btn{
-    bottom: 5%;
+  .event-btn {
+    bottom: 13% !important;
+    right: 20%;
+    min-width: 50% !important;
+    width: 60% !important;
+  }
+}
+@media screen and (max-width: 991px) {
+  .event-container1 {
+    display: none;
+  }
+  .event-container2 {
+    display: block;
+  }
+  .event-img {
+    top: 20%;
+    right: 17%;
+    width: 70%;
+    min-width: 50% !important;
+  }
+  .event-btn {
+    bottom: 14% !important;
     right: 20%;
     min-width: 50% !important;
     width: 60% !important;
   }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
+  .event-img {
+    top: 20%;
+    right: 17%;
+    width: 70%;
+  }
+  .event-btn {
+    bottom: 9%;
+    right: 20%;
+    min-width: 50% !important;
+    width: 60% !important;
+  }
+}
+
+/* @media screen and (max-width: 768px){
   .event-img {
     top: 20%;
     right: 15%;
@@ -116,53 +191,54 @@
     min-width: 50% !important;
     width: 50% !important;
   }
-}
+} */
 
-@media screen and (max-width: 520px){
+@media screen and (max-width: 520px) {
   .event-img {
     top: 20%;
-    right: 15%;
+    right: 17%;
     width: 70%;
   }
-  .event-btn{
-    bottom: 5%;
-    right: 10%;
-    min-width: 50% !important;
-    width: 80% !important;
-  }
-}
-
-@media screen and (max-width: 440px){
-  .event-img {
-    top: 20%;
-    right: 15%;
-    width: 70%;
-  }
-  .event-btn{
+  .event-btn {
     bottom: 5%;
     right: 20%;
     min-width: 50% !important;
     width: 60% !important;
   }
-  .event-btn>button{
-    height: 50px;
+}
+
+@media screen and (max-width: 441px) {
+  .event-img {
+    top: 20%;
+    /* right: 20%; */
+    width: 60%;
+  }
+  .event-btn {
+    bottom: 5%;
+    right: 19% !important;
+    min-width: 50% !important;
+    width: 60% !important;
+  }
+  .event-btn > button {
+    height: 40px;
   }
 }
 
-@media screen and (max-width: 290px){
+@media screen and (max-width: 290px) {
   .event-img {
     top: 20%;
-    right: 15%;
-    width: 70%;
+    /* right: 20%; */
+    width: 60%;
   }
-  .event-btn{
+  .event-btn {
     bottom: 4%;
-    right: 20%;
+    right: 19%;
     min-width: 50% !important;
     width: 60% !important;
   }
-  .event-btn>button{
-    height: 45px;
+  .event-btn > button {
+    height: 35px;
+    font-weight: normal;
   }
 }
 
