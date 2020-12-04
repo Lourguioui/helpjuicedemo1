@@ -43,23 +43,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 .wrapper,
 .wrapper .img-area {
-    background: #383d59;
-    box-shadow: -3px -3px 7px #49517b, 3px 3px 5px #22273f;
+    background: white;
+    box-shadow: -3px -3px 7px #cfd6ee, 3px 3px 5px #ceced1;
 }
 .wrapper {
     position: relative;
-    width: 260px;
+    width: 100%;
     padding: 30px;
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    font-family: "GilroyLight";
 }
 .wrapper .img-area {
-    height: 150px;
-    width: 150px;
+    height: 100px;
+    width: 100px;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -79,11 +78,11 @@
 .wrapper .name {
     font-size: 23px;
     font-weight: 500;
-    color: rgb(221, 221, 221);
+    color: #44476a;
     margin: 10px 0 5px 0;
 }
 .wrapper .about {
-    color: rgb(199, 199, 199);
+    color: #44476a;
     font-weight: 400;
     font-size: 16px;
 }
@@ -103,9 +102,13 @@
     font-size: 16px;
 }
 .wrapper .icon i {
+    color: #383D59;
     position: relative;
     z-index: 9;
 }
+.wrapper .icon.arrow {
+    left: 15px;
+}
 .wrapper .icon.dots {
-    right: 15px;
+    right: 0px;
 }
