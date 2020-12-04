@@ -45,6 +45,7 @@
 .wrapper .img-area {
     background: white;
     box-shadow: -3px -3px 7px #cfd6ee, 3px 3px 5px #ceced1;
+    font-family: "GilroyLight";
 }
 .wrapper {
     position: relative;

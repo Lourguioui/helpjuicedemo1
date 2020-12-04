@@ -34,7 +34,7 @@ function initMap() {
   //Init the Map centeered in Algiers
   map = new google.maps.Map(document.getElementById("map"), {
     zoom: 5,
-    center: new google.maps.LatLng(36.73225, 3.08746),
+    center: new google.maps.LatLng(43.60488141638056, 5.792154299910386),
     mapTypeId: "roadmap",
     mapTypeControl :false,
     streetViewControl :false,

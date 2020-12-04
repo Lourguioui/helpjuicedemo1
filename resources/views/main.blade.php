@@ -41,9 +41,7 @@
 @section('scripts')
 <script src="{{ asset('js/events.js') }}"></script>
 <script src="{{asset('js/faq.js')}}"></script>
-<script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbkAc5WgnIYDkqCPo0c5beRSFjtDcOsOM &callback=initMap">
-</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbkAc5WgnIYDkqCPo0c5beRSFjtDcOsOM&map_ids=6205470d7b62da92&callback=initMap&libraries=&v=weekly" defer async></script>
 <script src="{{asset('js/init.js')}}"></script>
 <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 <script src="{{asset('js/up.js')}}"></script>
