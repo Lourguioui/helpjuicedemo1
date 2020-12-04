@@ -3,16 +3,16 @@
 
 {{-- Include Styles that are used only in this page in this section --}}
 @section('styles')
-<link rel="stylesheet" href="{{asset('css/become-partner/hero.css')}}">
-<link rel="stylesheet" href="{{asset('css/become-partner/stats.css')}}">
-<link rel="stylesheet" href="{{asset('css/become-partner/whoarewe.css')}}">
+<link rel="stylesheet" href="{{env('APP_URL') . '/css/become-partner/hero.css'}}">
+<link rel="stylesheet" href="{{env('APP_URL') . '/css/become-partner/stats.css'}}">
+<link rel="stylesheet" href="{{env('APP_URL') . '/css/become-partner/whoarewe.css'}}">
 
-<link rel="stylesheet" href="{{asset('css/become-partner/how-do-sponsors.css')}}">
-<link rel="stylesheet" href="{{asset('css/become-partner/footer.css')}}">
+<link rel="stylesheet" href="{{env('APP_URL') . '/css/become-partner/how-do-sponsors.css'}}">
+<link rel="stylesheet" href="{{env('APP_URL') . '/css/become-partner/footer.css'}}">
 
-<link rel="stylesheet" href="{{asset('css/become-partner/map.css')}}">
-<link rel="stylesheet" href="{{asset('css/become-partner/why.css')}}">
-<link rel="stylesheet" href="{{asset('css/become-partner/contact.css')}}">
+<link rel="stylesheet" href="{{env('APP_URL') . '/css/become-partner/map.css'}}">
+<link rel="stylesheet" href="{{env('APP_URL') .  '/css/become-partner/why.css'}}">
+<link rel="stylesheet" href="{{env('APP_URL') . '/css/become-partner/contact.css'}}">
 
 @endsection
 

@@ -5,14 +5,13 @@
                 <div class="row justify-content-center justify-content-md-start">
                     <div class="col-auto p-0">
                         <h3 class="title">
-                            CSE'S Projects.
+                            {{__('main.cse_projects')}}
                         </h3>
                     </div>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum odio quae voluptates dignissimos
-                        voluptatibus fuga vel, necessitatibus quidem? Sit, dicta.
+                        {{__('main.projects')}}
                     </p>
-                    <a href="{{route('projects')}}" target="_blank">
+                    <a href="{{route('projects', app()->getLocale())}}" target="_blank">
                         <button class="mt-2">
                             <span></span>
                             <span></span>

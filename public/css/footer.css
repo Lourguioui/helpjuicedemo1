@@ -1,6 +1,5 @@
 footer {
-  background: transparent linear-gradient(180deg, #383d59 0%, #0b0c12 100%) 0%
-    0% no-repeat padding-box;
+  background: transparent linear-gradient(180deg, #383d59 0%, #0b0c12 100%) 0% 0% no-repeat padding-box;
   text-align: center;
   margin-top: 4rem !important;
 }
@@ -131,10 +130,9 @@ footer {
   text-decoration: none;
 }
 
-
 /* Newsletter input */
 #email {
-  margin: auto;
+ margin: auto;
   width: 100%;
   border-radius: 5px;
   font-family: GilroyLight;
@@ -142,9 +140,9 @@ footer {
 }
 
 #email input.form-control {
-  height : 45px !important;
+  height: 45px !important;
   box-shadow: none;
-  }
+}
 /*input {
   height: 45px !important;
 }*/
@@ -163,9 +161,75 @@ footer {
   cursor: pointer;
 }
 
-.input-group>.input-group-append>.btn, .input-group>.input-group-append>.input-group-text, .input-group>.input-group-prepend:first-child>.btn:not(:first-child), .input-group>.input-group-prepend:first-child>.input-group-text:not(:first-child), .input-group>.input-group-prepend:not(:first-child)>.btn, .input-group>.input-group-prepend:not(:first-child)>.input-group-text {  
+.input-group > .input-group-append > .btn,
+.input-group > .input-group-append > .input-group-text,
+.input-group > .input-group-prepend:first-child > .btn:not(:first-child),
+.input-group > .input-group-prepend:first-child > .input-group-text:not(:first-child),
+.input-group > .input-group-prepend:not(:first-child) > .btn,
+.input-group > .input-group-prepend:not(:first-child) > .input-group-text {
   border-top-right-radius: 10%;
   border-bottom-right-radius: 10%;
+}
+.dropdown-container {
+  text-align: center !important;
+  display: flex;
+  justify-content: center;
+}
+.dropdown-btn {
+  width: 247px !important;
+  height: 56px !important;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border-radius: 10px;
+  opacity: 1;
+  min-width: unset;
+  text-align: left;
+  color: #10121a;
+  margin-bottom: 5px;
+}
+.dropdown-menu {
+  width: 247px !important;
+  color: #10121a !important;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+
+.menu-item {
+  height: 40px;
+  line-height: 40px;
+  padding-left: 30px;
+
+}
+
+.menu-item.menu-item1:hover{
+  background-color: #d1d1d1;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.menu-item.menu-item2:hover{
+  background-color: #d1d1d1;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.menu-link {
+  height: 40px;
+  line-height: 40px;
+  color: #10121a !important;
+  text-align: left;
+  font-family: GilroyLight;
+  letter-spacing: 0px;
+  color: #1d1f22;
+  opacity: 1;
+  text-decoration: none;
+
+}
+
+.menu-link:hover{
+  text-decoration: none;
+  text-underline-offset: none;
 }
 
 /* Arrow animation */

@@ -7,12 +7,12 @@
                     Your browser does not support the video tag.
                 </video>
                 </div>
-                <img src="{{asset('img/cadre.png')}}" class="img-fluid" id="cadre" alt="Responsive image"> 
-            </div> 
+                <img src="{{asset('img/cadre.png')}}" class="img-fluid" id="cadre" alt="Responsive image">
+            </div>
             <div class="col-10 col-md-6">
                 <div class="row justify-content-center justify-content-md-start">
-                        
-                    
+
+
                     <div class="col-auto p-0" >
                         <p> Passage TV -Dzair News TV-</p>
                         <h3 class="title">
@@ -20,7 +20,7 @@
                         </h3>
                         <h6 class="media-date" > 16 Avril 2018 </h6>
                     </div>
-                    
+
                     <p class='col-12 text-center-respo' >
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum odio quae voluptates dignissimos
                         voluptatibus fuga vel, necessitatibus quidem? Sit, dicta.
@@ -32,7 +32,7 @@
                      </div>
                 </div>
                     <div class='row r2'>
-                    <a href="{{route('media')}}" target="_blank">
+                    <a href="{{route('media', app()->getLocale())}}" target="_blank">
                             <button class="mt-2" id="small-button">
                                 <span></span>
                                 <span></span>
@@ -42,16 +42,16 @@
                             </button>
                     </a>
                     </div>
-                
+
             </div>
 
 
 
 
-            
+
         </div>
         <div>
-         
+
         </div>
     </div>
 </section>

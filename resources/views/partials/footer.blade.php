@@ -20,7 +20,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>                          
+                        </div>
                     </div>
                 </div>
                 <div class="row mb-4 justify-content-md-center">
@@ -51,7 +51,10 @@
                 </div>
                 <div class="row p-2 p-md-0 mb-4 links text-left">
                     <div class="col-6 col-lg-4 mt-3">
-                        <h3 class="bold">About CSE</h3>
+                      <div class="col-12 col-lg-8 m-auto">
+                         <h3 class="bold text-left">About CSE</h3>
+                     </div>
+                       <div class="col-12 col-lg-8 m-auto">
                         <a href="http://" target="_blank">
                             <p>About</p>
                         </a>
@@ -61,35 +64,71 @@
                         <a href="http://" target="_blank">
                             <p>Projects</p>
                         </a>
+                       </div>
                     </div>
                     <div class="col-6 col-lg-4 mt-3">
-                        <h3 class="bold">CSE Events</h3>
-                        <a href="http://" target="_blank">
+                      <div class="col-12 col-lg-8 m-auto">
+                        <h3 class="bold text-left">CSE Events</h3>
+                      </div>
+                        <div class="col-12 col-lg-8 m-auto">
+                         <a href="http://" target="_blank">
                             <p>HackIT</p>
-                        </a>
-                        <a href="http://" target="_blank">
+                         </a>
+                         <a href="http://" target="_blank">
                             <p>CasbahTech hackathon</p>
-                        </a>
+                         </a>
+                        </div>
                     </div>
                     <div class="col-6 col-lg-4 mt-3">
                         <div class="row">
                             <div class="col-lg-12">
+                            <div class="col-12 col-lg-8 m-auto">
                                 <h3 class="bold">Resources</h3>
-                                <a href="http://" target="_blank">
+                            </div>
+                                <div class="col-12 col-lg-8 m-auto">
+                                 <a href="http://" target="_blank">
                                     <p>FAQ</p>
-                                </a>
-                                <a href="http://" target="_blank">
+                                 </a>
+                                 <a href="http://" target="_blank">
                                     <p>Code of Conduct</p>
-                                </a>
+                                 </a>
+                                </div>
                             </div>
                             <div class="col-lg-12">
-                                <h3 class="bold">Partner</h3>
-                                <a href="http://" target="_blank">
+                              <div class="col-12 col-lg-8 m-auto">
+                                <h3 class="bold text-left">Partner</h3>
+                              </div>
+                                <div class="col-12 col-lg-8 m-auto">
+                                 <a href="http://" target="_blank">
                                     <p>Become a partner</p>
-                                </a>
+                                 </a>
+                                </div>
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="row dropdown-container">
+                    {{-- <button onclick="{{set_lang('fr')}}">Change Language</button> --}}
+                    <button class="btn btn-default dropdown-toggle dropdown-btn" type="button" id="menu1" data-toggle="dropdown">
+                        <i class="fa fa-globe" style="color: #10121A;"></i>
+                        @if (app()->isLocale('en'))
+                            English
+                        @else
+                            Francais
+                        @endif
+                    </button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                        <li role="presentation" class="menu-item menu-item1">
+                        <a role="menuitem" class="menu-link" tabindex="-1" href="{{route(Route::currentRouteName(), 'en')}}">
+                                English
+                            </a>
+                        </li>
+                        <li role="presentation" class="menu-item menu-item2">
+                            <a role="menuitem" class="menu-link" tabindex="-1" href="{{route(Route::currentRouteName(), 'fr')}}">
+                                French
+                            </a>
+                        </li>
+                    </ul>
                 </div>
                 <div class="row">
                     <div class="col-12">

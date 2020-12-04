@@ -1,14 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0d7c3690-dc61-4a56-8cc1-30a4da2b5fc7" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="0d7c3690-dc61-4a56-8cc1-30a4da2b5fc7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/new-cse-website.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/new-cse-website.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/fr/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/fr/main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/main/about-us.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/main/about-us.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/main/events.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/main/events.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/main/media-coverage.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/main/media-coverage.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/main/our-vision.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/main/our-vision.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/main/projects.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/main/projects.blade.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
       <executable />
@@ -115,7 +125,13 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1bVicYjqK189eeCfcfsOuG2R0ac" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -125,23 +141,23 @@
       <recent name="C:\Users\DELL\PhpstormProjects\new-cse-website\resources\views\partials" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
       <method v="2" />
     </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -154,10 +170,33 @@
       <option name="presentableId" value="Default" />
       <updated>1588723741084</updated>
       <workItem from="1588723742260" duration="3089000" />
+      <workItem from="1606515459489" duration="539000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1493" height="187" key="GridCell.Tab.0.bottom" timestamp="1606515998308">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="187" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606515998308" />
+    <state width="1493" height="187" key="GridCell.Tab.0.center" timestamp="1606515998308">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="187" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1606515998308" />
+    <state width="1493" height="187" key="GridCell.Tab.0.left" timestamp="1606515998308">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="187" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1606515998308" />
+    <state width="1493" height="187" key="GridCell.Tab.0.right" timestamp="1606515998308">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="187" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1606515998308" />
+    <state x="465" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1606515534631">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="465" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1606515534631" />
   </component>
 </project>

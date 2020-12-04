@@ -1,4 +1,4 @@
-<section id="hero">
+<section class="hero mt-4" id="hero">
 <div class="container" id="media-coverage-text">
         <div class="row justify-content-center">
             <div class="col- title">

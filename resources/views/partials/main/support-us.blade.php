@@ -13,7 +13,7 @@
                         voluptatibus fuga vel, necessitatibus quidem? Sit, dicta. Quaerat aliquid repellendus mollitia
                         praesentium deserunt eum itaque molestiae expedita?
                     </p>
-                    <a href="{{route('partner')}}" target="_blank">
+                    <a href="{{route('partner', app()->getLocale())}}" target="_blank">
                         <button class="mt-2">
                             <span></span>
                             <span></span>

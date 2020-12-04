@@ -7,12 +7,12 @@
                     Your browser does not support the video tag.
                 </video>
                 </div>
-                <img src="{{asset('img/cadre.png')}}" class="img-fluid" id="cadre" alt="Responsive image"> 
+                <img src="{{asset('img/cadre.png')}}" class="img-fluid" id="cadre" alt="Responsive image">
             </div>
             <div class="col-10 col-md-6">
                 <div class="row justify-content-center justify-content-md-start">
                     <div class="col-auto p-0">
-                        
+
                         <p> Passage radio - Joradio TV-</p>
                         <h3 class="title">
                         About event3
@@ -30,7 +30,7 @@
                     </div>
                 </div>
                 <div class='row r2'>
-                <a href="{{route('media')}}" target="_blank">
+                <a href="{{route('media', app()->getLocale())}}" target="_blank">
                         <button class="mt-2" id="small-button">
                             <span></span>
                             <span></span>

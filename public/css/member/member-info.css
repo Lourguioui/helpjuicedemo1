@@ -1,0 +1,58 @@
+#memberimg {
+    object-fit: cover;
+    width: 220px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+hr.solid {
+    border-top: 1px solid #bbb;
+
+}
+
+  .timeline{
+    counter-reset: year 2016;
+    position: relative;
+  }
+  
+  .timeline li{
+    list-style: none;
+    float: left;
+    width: 33,3333%;
+    position: relative;
+    text-align: center;
+    font-size: small;
+  }
+    
+  .timeline li:before{
+    counter-increment: year;
+    content: counter(year);
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    display: block;
+    line-height: 100px;
+    text-align: center;
+    margin: 0 auto 40px auto;
+    background-color: white;
+    transition: all ease-in-out .3s;
+    cursor: pointer;
+  }
+  
+  .timeline li:after{
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 3px;
+    background-color: white;
+    top: 9px;
+    right: 50%;
+    z-index: -999;
+    transition: all ease-in-out .3s;
+  }
+  
+  .timeline li:first-child:after{
+    content: none;
+  }
+
+
