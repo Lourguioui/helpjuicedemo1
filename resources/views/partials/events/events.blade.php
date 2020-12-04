@@ -16,15 +16,15 @@
                 </p>
                 <div class='row justify-content-start' style='position:relative; padding-left: 0px !important'>
                     <div class='col-4 col-sm-4 col-lg-4 stats-img-container'>
-                        <img class='stats-img' src="{{asset('img/Stone-engraved-text-effect.png')}}"/>
+                        <img class='stats-img' src="{{asset('img/Circle_.png')}}"/>
                     <div class='stats-p bold'><p class='counter bold' data-target="1001">0</p>Members</div>
                     </div>
                     <div class='col-4 col-sm-4 col-lg-4 stats-img-container'>
-                        <img class='stats-img' src="{{asset('img/Stone-engraved-text-effect.png')}}"/>
+                        <img class='stats-img' src="{{asset('img/Circle_.png')}}"/>
                     <div class='stats-p bold'><p class='counter bold' data-target="30">0</p>Events</div>
                     </div>
                     <div class='col-4 col-sm-4 col-lg-4 stats-img-container'>
-                        <img class='stats-img' src="{{asset('img/Stone-engraved-text-effect.png')}}"/>
+                        <img class='stats-img' src="{{asset('img/Circle_.png')}}"/>
                     <div class='stats-p bold'><p class='counter bold' data-target="50">0</p>Formations</div>
                     </div>
                 </div>
@@ -75,15 +75,15 @@
                 </p>
                 <div class='row justify-content-start' style='position:relative; padding-left: 0px !important'>
                     <div class='col-4 col-sm-4 col-lg-4 stats-img-container'>
-                        <img class='stats-img' src="{{asset('img/Stone-engraved-text-effect.png')}}"/>
+                        <img class='stats-img' src="{{asset('img/Circle_.png')}}"/>
                     <div class='stats-p bold'><p class='counter bold' data-target="1001">0</p>Members</div>
                     </div>
                     <div class='col-4 col-sm-4 col-lg-4 stats-img-container'>
-                        <img class='stats-img' src="{{asset('img/Stone-engraved-text-effect.png')}}"/>
+                        <img class='stats-img' src="{{asset('img/Circle_.png')}}"/>
                     <div class='stats-p bold'><p class='counter bold' data-target="30">0</p>Events</div>
                     </div>
                     <div class='col-4 col-sm-4 col-lg-4 stats-img-container'>
-                        <img class='stats-img' src="{{asset('img/Stone-engraved-text-effect.png')}}"/>
+                        <img class='stats-img' src="{{asset('img/Circle_.png')}}"/>
                     <div class='stats-p bold'><p class='counter bold' data-target="50">0</p>Formations</div>
                     </div>
                 </div>
@@ -108,15 +108,15 @@
                 </p>
                 <div class='row justify-content-start' style='position:relative; padding-left: 0px !important'>
                     <div class='col-4 col-sm-4 col-lg-4 stats-img-container'>
-                        <img class='stats-img' src="{{asset('img/Stone-engraved-text-effect.png')}}"/>
+                        <img class='stats-img' src="{{asset('img/Circle_.png')}}"/>
                     <div class='stats-p bold'><p class='counter bold' data-target="1001">0</p>Members</div>
                     </div>
                     <div class='col-4 col-sm-4 col-lg-4 stats-img-container'>
-                        <img class='stats-img' src="{{asset('img/Stone-engraved-text-effect.png')}}"/>
+                        <img class='stats-img' src="{{asset('img/Circle_.png')}}"/>
                     <div class='stats-p bold'><p class='counter bold' data-target="30">0</p>Events</div>
                     </div>
                     <div class='col-4 col-sm-4 col-lg-4 stats-img-container'>
-                        <img class='stats-img' src="{{asset('img/Stone-engraved-text-effect.png')}}"/>
+                        <img class='stats-img' src="{{asset('img/Circle_.png')}}"/>
                     <div class='stats-p bold'><p class='counter bold' data-target="50">0</p>Formations</div>
                     </div>
                 </div>

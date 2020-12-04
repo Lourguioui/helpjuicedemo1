@@ -1,4 +1,4 @@
-<section class="hero">
+<section class="hero" id="hero">
     <div class="container hero-content">
            <div class="row justify-content-center">
              <h1 class="text-center title col-auto col-xs-4">CSE Members.</h1>
@@ -19,11 +19,11 @@
                                     </div>
               </div>
              </div>
-            </div>       
+            </div>
             <div class='col-auto' style="margin-top:40px ;">
                 <div class="arrow bounce" style="margin-top:48px ;">
                     <a href="#"><i class="fas fa-angle-double-down fa-2x"></i></a>
                 </div>
-            </div>   
+            </div>
     </div>
 </section>

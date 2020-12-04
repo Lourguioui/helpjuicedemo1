@@ -4,11 +4,11 @@
 {{-- Include Styles that are used only in this page in this section --}}
 @section('styles')
 
-<link rel="stylesheet" href="{{asset('css/cse-members/hero.css')}}">
-<link rel="stylesheet" href="{{asset('css/cse-members/member-of-the-month.css')}}">
-<link rel="stylesheet" href="{{asset('css/cse-members/find-our-members.css')}}">
-<link rel="stylesheet" href="{{asset('css/cse-members/our-members.css')}}">
-<link rel="stylesheet" href="{{asset('css/cse-members/our-alumnies.css')}}">
+<link rel="stylesheet" href="{{env('APP_URL') . '/css/cse-members/hero.css'}}">
+<link rel="stylesheet" href="{{env('APP_URL') . '/css/cse-members/member-of-the-month.css'}}">
+<link rel="stylesheet" href="{{env('APP_URL') . '/css/cse-members/find-our-members.css'}}">
+<link rel="stylesheet" href="{{env('APP_URL') . '/css/cse-members/our-members.css'}}">
+<link rel="stylesheet" href="{{env('APP_URL') . '/css/cse-members/our-alumnies.css'}}">
 
 @endsection
 
@@ -32,5 +32,5 @@
 
 {{-- Include Scripts that are used only in this page in this section --}}
 @section('scripts')
-
+<script src="{{env('APP_URL') . '/js/main.js'}}"></script>
 @endsection
