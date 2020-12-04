@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="{{env('APP_URL') . '/css/normalize.css'}}">
     <!-- Base CSS -->
     <link rel="stylesheet" href="{{env('APP_URL') . '/css/base.css'}}">
+    <link rel="stylesheet" href="{{env('APP_URL') . '/css/footer.css'}}">
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/06a369e083.js" crossorigin="anonymous"></script>
 
@@ -69,7 +70,7 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
     <script src="{{env('APP_URL') . '/js/plugins.js'}}"></script>
-    <script src="{{env('APP_URL') . 'js/main.js'}}"></script>
+    <script src="{{env('APP_URL') . '/js/main.js'}}"></script>
 
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <script>
