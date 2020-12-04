@@ -47,4 +47,12 @@ Route::group(['prefix' => '{Locale}'], function () {
     Route::get('/members', function () {
         return view('members');
     })->name('members');
+
+    Route::get('/cse-members', function () {
+        return view('cse-members');
+    })->name('cse-members');
+
+    Route::get('/member', function () {
+        return view('member');
+    })->name('member');
 });
