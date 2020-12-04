@@ -1,0 +1,42 @@
+.my-dropdown {
+  background-color: #2c2e3e;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 40px;
+  padding: 10px;
+}
+
+.my-dropdown select {
+  font-weight: bold;
+}
+
+.card {
+  border-radius: 55px;
+  width: 280px;
+  height: 330px;
+}
+
+.card .card-body {
+  padding: 20px;
+}
+
+.card-body h2 {
+  font-weight: bold;
+}
+
+.card-body h2.name {
+  font-size: 20px;
+}
+
+.card-body p,
+.card-body h2 {
+  color: #383d59;
+}
+
+.card .card-body img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
