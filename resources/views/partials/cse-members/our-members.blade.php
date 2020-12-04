@@ -1,8 +1,10 @@
 <section>
     <div class="container">
         <div class="row justify-content-center align-items-center">
-            <h1 class="col-md-11 col-lg-6">Our Members.</h1>
-            <div class="my-dropdown col-3">
+            <div class="col-lg-8 col-12">
+              <h2 class="title text-left" id="titre">Our Members.</h1>
+            </div>            
+            <div class="my-dropdown col-auto col-lg-3">
                 Sorted by:
                 <select style="border: 0; background-color: #2C2E3E">
                     <option>Organisation</option>
@@ -12,60 +14,60 @@
             </div>
         </div>
         <div class="row justify-content-around">
-            <div class="col-8 col-md-6 col-lg-4 p-4">
+            <div class="col-auto col-md-6 col-lg-4 p-4">
                 <div class="card">
                     <div class="card-body text-center">
-                        <h2 class="card-title">Dev Member</h2>
+                        <h2 class="card-title mt-3 mb-1">CSE President</h2>
                         <h2 class="name">Zouambia Sohaib</h2>
                         <p><img class=" img-fluid" src="{{asset('img/sohaib.jpg')}}" alt="card image"></p>
                         <p class="card-text">@loremipsum</p>
                     </div>
                 </div>
             </div>
-            <div class="col-8 col-md-6 col-lg-4 p-4">
+            <div class="col-auto col-md-6 col-lg-4 p-4">
                 <div class="card">
                     <div class="card-body text-center">
-                        <h2 class="card-title">Dev Member</h2>
+                        <h2 class="card-title mt-3 mb-1">Dev Member</h2>
                         <h2 class="name">Zouambia Sohaib</h2>
                         <p><img class=" img-fluid" src="{{asset('img/sohaib.jpg')}}" alt="card image"></p>
                         <p class="card-text">@loremipsum</p>
                     </div>
                 </div>
             </div>
-            <div class="col-8 col-md-6 col-lg-4 p-4">
+            <div class="col-auto col-md-6 col-lg-4 p-4">
                 <div class="card">
                     <div class="card-body text-center">
-                        <h2 class="card-title">Dev Member</h2>
+                        <h2 class="card-title mt-3 mb-1">Dev Member</h2>
                         <h2 class="name">Zouambia Sohaib</h2>
                         <p><img class=" img-fluid" src="{{asset('img/sohaib.jpg')}}" alt="card image"></p>
                         <p class="card-text">@loremipsum</p>
                     </div>
                 </div>
             </div>
-            <div class="col-8 col-md-6 col-lg-4 p-4">
+            <div class="col-auto col-md-6 col-lg-4 p-4">
                 <div class="card">
                     <div class="card-body text-center">
-                        <h2 class="card-title">Dev Member</h2>
+                        <h2 class="card-title mt-3 mb-1">Dev Member</h2>
                         <h2 class="name">Zouambia Sohaib</h2>
                         <p><img class=" img-fluid" src="{{asset('img/sohaib.jpg')}}" alt="card image"></p>
                         <p class="card-text">@loremipsum</p>
                     </div>
                 </div>
             </div>
-            <div class="col-8 col-md-6 col-lg-4 p-4">
+            <div class="col-auto col-md-6 col-lg-4 p-4">
                 <div class="card">
                     <div class="card-body text-center">
-                        <h2 class="card-title">Dev Member</h2>
+                        <h2 class="card-title mt-3 mb-1">Dev Member</h2>
                         <h2 class="name">Zouambia Sohaib</h2>
                         <p><img class=" img-fluid" src="{{asset('img/sohaib.jpg')}}" alt="card image"></p>
                         <p class="card-text">@loremipsum</p>
                     </div>
                 </div>
             </div>
-            <div class="col-8 col-md-6 col-lg-4 p-4">
+            <div class="col-auto col-md-6 col-lg-4 p-4">
                 <div class="card">
                     <div class="card-body text-center">
-                        <h2 class="card-title">Dev Member</h2>
+                        <h2 class="card-title mt-3 mb-1">Dev Member</h2>
                         <h2 class="name">Zouambia Sohaib</h2>
                         <p><img class=" img-fluid" src="{{asset('img/sohaib.jpg')}}" alt="card image"></p>
                         <p class="card-text">@loremipsum</p>
