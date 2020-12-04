@@ -53,9 +53,9 @@ function initMap() {
                   '<img  src="' + member.icon + '" alt="'+member.name+'" />' + 
                '</div>'+
         '</div>'+  
-        '<div class="icon dots"><i class="fas fa-ellipsis-v"></i></div>'+
         '<div class="name">'+member.name+'</div>'+
         '<div class="about">  '+member.poste +'</div>'+
+        '<div class="btn btn-outline-secondary mt-2">Check Profile</i></div>'+
     '</div>';
     //Create Marker with Member Infos  
     marker =new google.maps.Marker({
@@ -67,6 +67,7 @@ function initMap() {
             scale:1,
             strokeColor : "black"
         },
+      title:member.name,
       });
       
     marker.addListener("click", ()=>{
