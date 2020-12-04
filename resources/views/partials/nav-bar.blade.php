@@ -11,7 +11,7 @@
             <div class="dropdown-content">
                 <p><a href="#">CSE Vision</a></p>
                 <p><a href="become-partner">Become Partner</a></p>
-                <p><a href="cse-members">Members</a></p>
+                <p><a href="{{ route('cse-members', app()->getLocale()) }}">Members</a></p>
                 <p><a href="#">Join CSE</a></p>
             </div>
         </li>
@@ -37,7 +37,7 @@
         <div class='nav-menu_item'><a data-scroll href="#supportus">SupportUs</a></div>
         <div class='nav-menu_item'><a data-scroll href="#">CSE Vision</a></div>
         <div class='nav-menu_item'><a data-scroll href="become-partner">Become Partner</a></div>
-        <div class='nav-menu_item'><a data-scroll href="cse-members">Members</a></div>
+        <div class='nav-menu_item'><a data-scroll href="{{ route('cse-members', app()->getLocale()) }}">Members</a></div>
         <div class='nav-menu_item'><a data-scroll href="#">Join CSE</a></div>
     </div>
     </div>
