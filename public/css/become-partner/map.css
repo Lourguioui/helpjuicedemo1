@@ -6,6 +6,31 @@
     margin-right: 0px;
 }
 
+#map {
+    width: 70%;
+    height: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2%;
+    display: block;
+    border: double 15px transparent;
+    box-sizing: content-box;
+  padding: 17px;
+  border-radius: 35px;
+  background-image: linear-gradient(white, white),
+    radial-gradient(circle at top left, #434764 , #363951 );
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 3px 3px 16px 0px rgba(0, 0, 0, 0.16);
+  }
+
+  /* Optional: Makes the sample page fill the window. */
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
 .arrows{
     opacity: 1;
     display: block;
@@ -13,4 +38,78 @@
     height: 2%;
     width: 2%;
     margin: 15%;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+.wrapper,
+.wrapper .img-area {
+    background: white;
+    box-shadow: -3px -3px 7px #cfd6ee, 3px 3px 5px #ceced1;
+    font-family: "GilroyLight";
+}
+.wrapper {
+    position: relative;
+    width: 100%;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.wrapper .img-area {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-area .inner-area {
+    height: calc(100% - 25px);
+    width: calc(100% - 25px);
+    border-radius: 50%;
+}
+.inner-area img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.wrapper .name {
+    font-size: 23px;
+    font-weight: 500;
+    color: #44476a;
+    margin: 10px 0 5px 0;
+}
+.wrapper .about {
+    color: #44476a;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.wrapper .icon {
+    font-size: 17px;
+    color: white;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0.7;
+    top: 15px;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 50%;
+    font-size: 16px;
+}
+.wrapper .icon i {
+    color: #383D59;
+    position: relative;
+    z-index: 9;
+}
+.wrapper .icon.arrow {
+    left: 15px;
+}
+.wrapper .icon.dots {
+    right: 0px;
 }

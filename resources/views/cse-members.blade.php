@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="{{env('APP_URL') . '/css/cse-members/find-our-members.css'}}">
 <link rel="stylesheet" href="{{env('APP_URL') . '/css/cse-members/our-members.css'}}">
 <link rel="stylesheet" href="{{env('APP_URL') . '/css/cse-members/our-alumnies.css'}}">
+<link rel="stylesheet" href="{{env('APP_URL') . '/css/become-partner/map.css'}}">
 
 @endsection
 
@@ -33,4 +34,6 @@
 {{-- Include Scripts that are used only in this page in this section --}}
 @section('scripts')
 <script src="{{env('APP_URL') . '/js/main.js'}}"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbkAc5WgnIYDkqCPo0c5beRSFjtDcOsOM&map_ids=6205470d7b62da92&callback=initMap&libraries=&v=weekly" defer ></script>
+<script src="{{asset('js/become-partner/map.js')}}"> </script>
 @endsection

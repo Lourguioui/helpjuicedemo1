@@ -1,7 +1,7 @@
 <section>
     <div class="container">
         <div class="row justify-content-center">
-            <h1 class="title col-10 col-lg-auto">How do sponsors partner with CSE ?</h1>
+            <h1 class="title col-10 col-lg-auto text-center">How do sponsors partner with CSE ?</h1>
         </div>
         <div class="row justify-content-center">
             <p class="col-10 col-lg-7" style="text-align: justify; text-align-last: center;margin-bottom: 60px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae adipisci ullam esse, illo maxime ipsum quod cum, obcaecati magnam quam dignissimos distinctio est explicabo tempore eius error eos at in?</p>
