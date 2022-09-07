@@ -26,7 +26,7 @@
             </div>
             <div class="col-lg-6 col-sm-12">
                 <video id='hero-video' type="video/mp4" muted src="{{asset('videos/animation_v2.mp4')}}" autoplay loop playsinline
-                    aria-hidden="true" style="width: 100%;vertical-align: middle;"></video>
+                    aria-hidden="true" style="width: 100%;vertical-align: middle; margin-left: 0px; margin-right: 0px;"></video>
             </div>
         </div>
 
